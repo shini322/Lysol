@@ -1,0 +1,213 @@
+@import "_vars";
+@import "_libs";
+@import "_fonts";
+@import "_global";
+
+
+.header{
+    position: fixed;
+    top: vw(28);
+    left: vw(50);    
+    z-index: 2;
+}
+.logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    &__light{
+        position: absolute;
+        width: vw(251);
+        height: vw(206);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        left: vw(-40);
+        top: vw(-37);
+    }
+    &__img{
+        position: relative;
+        z-index: 3;
+    }
+    &__text{
+        margin-left: vw(43);
+        font-size: vw(24);
+        line-height: vw(28);
+    }
+}
+.hero{
+    padding: vw(211) 0 vw(136) vw(265);
+    background-color: $light-blue;
+    z-index: 3;
+    &__inner-img{
+        position: absolute;
+    }
+    &__inner-img-1{
+        top: 0;
+        left: 0;
+    }
+    &__inner-img-2{
+        left: 0;
+        top: vw(335);
+    }
+    &__inner-img-3{
+        left: 0;
+        top: vw(398);
+    }
+    &__inner-img-4{
+        left: vw(54);
+        top: vw(478);
+    }
+    &__inner-img-5{
+        left: vw(772);
+        top: vw(112);
+    }
+    &__inner-img-6{
+        left: vw(772);
+        top: vw(834);
+    }
+    &__inner-img-7{
+        left: vw(1210);
+        top: vw(104);
+    }
+    &__inner-img-8{
+        left: vw(1466);
+        top: vw(10);
+    }
+    &__text-block{
+        max-width: vw(630);
+    }
+    
+    &__subtitle{
+        margin-top: vw(15);
+        @extend %circe-eb;
+        font-size: vw(44);
+        line-height: vw(38);
+        text-transform: uppercase;
+    }
+    &__text{
+        margin-top: vw(33);
+        font-size: vw(24);
+        line-height: vw(34);
+    }
+    &__button{
+        margin-top: vw(60);
+    }
+    &__img{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+    
+}
+.instruction{
+    padding: vw(106) 0 vw(130);
+    &__row{
+        margin-top: vw(92);
+    }
+    &__item{
+        position: relative;
+        max-width: vw(418);
+        height: vw(518);
+        padding: vw(162) vw(40) vw(48) vw(50);
+        background-color: $bg-blue;
+        border: vw(1.2199) solid $border-blue;
+        border-radius: 30px;
+        margin: 0 auto;
+        &::before{
+            content: "";
+            position: absolute;
+            width: vw(55);
+            height: vw(55);
+            border-radius: 50%;
+            background-color: $white;
+            border: vw(1.2199) solid $border-blue;
+            top: vw(25);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__type{
+        display: flex;
+        align-items: center;
+    }
+    &__type-img-block{
+        margin-right: vw(26);
+    }
+    &__type-text{
+        @extend %circe-bold;
+        font-size: vw(24);
+        line-height: vw(34);
+        color: $black;
+    }
+    &__material{
+        display: flex;
+        align-items: center;
+        margin-top: vw(40);
+    }
+    &__material-img-block{
+        margin-right: vw(26);
+        min-width: vw(78);
+    }
+    &__material-img{
+        margin: 0 auto;
+    }
+    &__material-text{
+        @extend %circe-bold;
+        font-size: vw(24);
+        line-height: vw(34);
+        color: $black;
+        &--light{
+            @extend %circe-regular;
+        }
+    }
+    &__button{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin: vw(80) auto 0;
+        bottom: vw(48);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide-arrow{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $blue;
+        width: vw(66);
+        height: vw(66);
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .arrow-next{
+        right: vw(-117);
+        top: 50%;
+        transform: translateY(-50%);
+        .icon{
+            fill: $blue;
+            stroke: $blue;
+            width: vw(45);
+            height: vw(25);
+        }
+    }
+    .arrow-prev{
+        left: vw(-117);
+        top: 50%;
+        transform: translateY(-50%);
+        .icon{
+            fill: $blue;
+            stroke: $blue;
+            width: vw(45);
+            height: vw(25);
+        } 
+    }
+    .slick-slide{
+        padding: 0 vw(30);
+    }
+}
