@@ -24,6 +24,7 @@ a{
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    z-index: 9999;
 }
 .container{
     position: relative;
@@ -59,7 +60,7 @@ h2{
 }
 .button{
     @extend %circe-eb;
-    padding: vw(20) vw(42);
+    padding: vw(16) vw(42);
     background-color: $blue;
     border: none;
     color: $white;
@@ -68,5 +69,72 @@ h2{
     transition: .3s;
     &:hover{
         background-color: #3474CF;
+    }
+}
+.wash{
+    padding: 0;
+    max-width: vw(1410);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    cursor: auto !important;
+    &__inner{
+        display: flex;
+        align-items: center;
+        max-height: vw(770);
+    }
+    &__img-block{
+        max-width: vw(623);
+    }
+    &__img{
+        display: block;
+        max-height: vw(770);
+        border-radius: 30px;
+    }
+    &__text-block{
+        padding: vw(66) vw(69) vw(62) vw(80);
+        background-color: $modal-blue;
+        max-width: vw(785);
+        max-height: vw(765);
+        box-sizing: border-box;
+    }
+    &__title{
+        @extend %circe-eb;
+        font-size: vw(60);
+        color: $blue;
+    }
+    &__subtitle{
+        @extend %circe-bold;
+        font-size: vw(28);
+        text-transform: uppercase;
+        color: $blue;
+    }
+    &__text{
+        margin-top: vw(25);
+        @extend %circe-regular;
+        font-size: vw(20);
+        line-height: vw(28);
+        color: $black;
+        &--blue{
+            color: $blue;
+        }
+    }
+    .fancybox-close-small{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: vw(68);
+        height: vw(68);
+        top: vw(25);
+        right: vw(22);
+        border-radius: 50%;
+        border: 1px solid $blue;
+        background-color: $white;
+        svg{
+            width: vw(34);
+            height: vw(34);
+            color: $blue;
+        }
     }
 }

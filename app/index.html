@@ -17,7 +17,7 @@
                 </a>
             </header>
             <div class="hero__inner">
-                <img class="hero__inner-img hero__inner-img-1" src="images/hero/bubble-1.svg" alt="">
+                <img class="hero__inner-img hero__inner-img-1 wow fade" src="images/hero/bubble-1.svg" alt="" data-wow-duration="0.5s"data-wow-delay="0">
                 <img class="hero__inner-img hero__inner-img-2" src="images/hero/bubble-2.svg" alt="">
                 <img class="hero__inner-img hero__inner-img-3" src="images/hero/bubble-3.svg" alt="">
                 <img class="hero__inner-img hero__inner-img-4" src="images/hero/bubble-4.svg" alt="">
@@ -43,8 +43,8 @@
         </section>
         <section class="section page-content instruction">
             <div class="container">
-                <h2 class="instruction__title  wow fadeInDown" data-wow-duration="0.4s"data-wow-delay="0">Одежда: <br> инструкция по применению</h2>
-                <div class="instruction__row wow fadeInDown" data-wow-duration="0.4s"data-wow-delay="0">
+                <h2 class="instruction__title" >Одежда: <br> инструкция по применению</h2>
+                <div class="instruction__row ">
                     <div class="instruction__item">
                         <div class="instruction__type">
                             <div class="instruction__type-img-block">
@@ -58,7 +58,7 @@
                             </div>
                             <div class="instruction__material-text">Материал: <br> <span class="instruction__material-text--light">хлопок</span></div>
                         </div>
-                        <button class="button instruction__button">как стирать?</button>
+                        <a href="#wash" data-fancybox data-src="#wash" class="button instruction__button">как стирать?</a>
                     </div>
                     <div class="instruction__item">
                         <div class="instruction__type">
@@ -73,7 +73,7 @@
                             </div>
                             <div class="instruction__material-text">Материал: <br> <span class="instruction__material-text--light">сатин</span></div>
                         </div>
-                        <button class="button instruction__button">как стирать?</button>
+                        <a href="#wash" data-fancybox data-src="#wash" class="button instruction__button">как стирать?</a>
                     </div>
                     <div class="instruction__item">
                         <div class="instruction__type">
@@ -88,7 +88,7 @@
                             </div>
                             <div class="instruction__material-text">Материал: <br> <span class="instruction__material-text--light">спортивная синтетика</span></div>
                         </div>
-                        <button class="button instruction__button">как стирать?</button>
+                        <a href="#wash" data-fancybox data-src="#wash" class="button instruction__button">как стирать?</a>
                     </div>
                     <div class="instruction__item">
                         <div class="instruction__type">
@@ -103,7 +103,7 @@
                             </div>
                             <div class="instruction__material-text">Материал: <br> <span class="instruction__material-text--light">спортивная синтетика</span></div>
                         </div>
-                        <button class="button instruction__button">как стирать?</button>
+                        <a href="#wash" data-fancybox data-src="#wash" class="button instruction__button">как стирать?</a>
                     </div>
                     <div class="instruction__item">
                         <div class="instruction__type">
@@ -118,12 +118,29 @@
                             </div>
                             <div class="instruction__material-text">Материал: <br> <span class="instruction__material-text--light">спортивная синтетика</span></div>
                         </div>
-                        <button class="button instruction__button">как стирать?</button>
+                        <a href="#wash" data-fancybox data-src="#wash" class="button instruction__button">как стирать?</a>
                     </div>
                     
                 </div>
             </div>
         </section>
+    </div>
+    <div class="wash" id="wash">
+        <div class="wash__inner">
+            <div class="wash__img-block">
+                <img class="wash__img" src="images/modal/wash-bg.jpg" alt="" >
+            </div>
+            <div class="wash__text-block">
+                <div class="wash__title">Постельное белье </div>
+                <div class="wash__subtitle">Материал: сатин</div>
+                <div class="wash__text">
+                    Постельное белье — один из самых насыщенных бактериями предметов домашнего обихода. На одной только наволочке через неделю использования можно обнаружить в 7,5 тысяч раз больше бактерий, чем на сиденье унитаза. Среди прочих в постели можно обнаружить: бактерии из носоглотки Moraxella catarrhalis, вызывающие бронхит и пневмонию, споры Cladosporium molds — грибковые микроорганизмы, провоцирующие аллергические реакции, а также вирусы, живущие в интимной зоне. Кстати, большинство бактерий остаются преспокойно жить на белье и после стирки, ведь ни один даже самый эффективный порошок не дезинфицирует даже при температуре стирки выше 60 °С. Да и сама стиральная машинка по количеству бактерий, живущих в ней постоянно, сравнима с не очень чистой сантехникой.
+                </div>
+                <div class="wash__text wash__text--blue">
+                    Чтобы избавиться от видимых и невидимых врагов здоровья, придерживайтесь следующей схемы: стирайте белье отдельно от других тканей, предварительно вывернув его наизнанку; сатиновое белье стирайте при температуре 40–60 °С (режимы «хлопок» и «деликатный»). Частота — один раз в 7–10 дней с дезинфицирующим средством, которое добавляется в отсек для полоскания.
+                </div>
+            </div>
+        </div>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

@@ -25,6 +25,3 @@ $(window).scroll(function() {
     autoScrolling:true,
     scrollHorizontally: true
   });
-
-  //methods
-  $.fn.fullpage.setAllowScrolling(false);

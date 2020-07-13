@@ -1,14 +1,14 @@
-body, .instruction__material-text--light {
+body, .wash__text, .instruction__material-text--light {
   font-family: 'Circe-Regular';
   font-weight: 400;
 }
 
-h1, .instruction__type-text, .instruction__material-text {
+h1, .wash__subtitle, .instruction__type-text, .instruction__material-text {
   font-family: 'Circe-Bold';
   font-weight: 700;
 }
 
-h2, .button, .hero__subtitle {
+h2, .button, .wash__title, .hero__subtitle {
   font-family: 'Circe-ExtraBold';
   font-weight: 800;
 }
@@ -4461,6 +4461,7 @@ a {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .container {
@@ -4496,7 +4497,7 @@ h2 {
 }
 
 .button {
-  padding: 1.04167vw 2.1875vw;
+  padding: 0.83333vw 2.1875vw;
   background-color: #16478E;
   border: none;
   color: #FFFFFF;
@@ -4507,6 +4508,81 @@ h2 {
 
 .button:hover {
   background-color: #3474CF;
+}
+
+.wash {
+  padding: 0;
+  max-width: 73.4375vw;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  cursor: auto !important;
+}
+
+.wash__inner {
+  display: flex;
+  align-items: center;
+  max-height: 40.10417vw;
+}
+
+.wash__img-block {
+  max-width: 32.44792vw;
+}
+
+.wash__img {
+  display: block;
+  max-height: 40.10417vw;
+  border-radius: 30px;
+}
+
+.wash__text-block {
+  padding: 3.4375vw 3.59375vw 3.22917vw 4.16667vw;
+  background-color: #D6EEFC;
+  max-width: 40.88542vw;
+  max-height: 39.84375vw;
+  box-sizing: border-box;
+}
+
+.wash__title {
+  font-size: 3.125vw;
+  color: #16478E;
+}
+
+.wash__subtitle {
+  font-size: 1.45833vw;
+  text-transform: uppercase;
+  color: #16478E;
+}
+
+.wash__text {
+  margin-top: 1.30208vw;
+  font-size: 1.04167vw;
+  line-height: 1.45833vw;
+  color: #000000;
+}
+
+.wash__text--blue {
+  color: #16478E;
+}
+
+.wash .fancybox-close-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 3.54167vw;
+  height: 3.54167vw;
+  top: 1.30208vw;
+  right: 1.14583vw;
+  border-radius: 50%;
+  border: 1px solid #16478E;
+  background-color: #FFFFFF;
+}
+
+.wash .fancybox-close-small svg {
+  width: 1.77083vw;
+  height: 1.77083vw;
+  color: #16478E;
 }
 
 .header {
@@ -4613,7 +4689,11 @@ h2 {
 }
 
 .hero__button {
+  font-size: 1.25vw;
+  line-height: 2.08333vw;
   margin-top: 3.125vw;
+  max-width: 18.33333vw;
+  width: 100%;
 }
 
 .hero__img {
@@ -4697,6 +4777,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 13.95833vw;
+  width: 100%;
+  min-height: 3.38542vw;
   bottom: 2.5vw;
   left: 50%;
   transform: translateX(-50%);

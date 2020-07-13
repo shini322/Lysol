@@ -91,7 +91,11 @@
         line-height: vw(34);
     }
     &__button{
+        font-size: vw(24);
+        line-height: vw(40);
         margin-top: vw(60);
+        max-width: vw(352);
+        width: 100%;
     }
     &__img{
         display: none;
@@ -169,6 +173,9 @@
         align-items: center;
         justify-content: center;
         // margin: vw(80) auto 0;
+        max-width: vw(268);
+        width: 100%;
+        min-height: vw(65);
         bottom: vw(48);
         left: 50%;
         transform: translateX(-50%);
