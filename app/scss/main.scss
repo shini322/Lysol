@@ -15,19 +15,26 @@
     display: flex;
     align-items: center;
     z-index: 4;
-    &__light{
+    max-width: vw(171);
+    height: vw(160);
+    &::before{
+        content: "";
         position: absolute;
         width: vw(251);
         height: vw(206);
+        background-image: url(../images/logo-light.png);
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 2;
-        left: vw(-40);
+        left: vw(-60);
         top: vw(-37);
     }
+    
     &__img{
         position: relative;
-        z-index: 3;
+        z-index: 5;
+        max-width: vw(171);
+        height: vw(160);
     }
     &__text{
         margin-left: vw(43);
@@ -39,40 +46,70 @@
     padding: vw(211) 0 vw(136) vw(265);
     background-color: $light-blue;
     z-index: 3;
+    .fp-tableCell{
+        @include for-lg{
+            display: flex;
+            align-items: center;
+            max-height: 100%;
+        }
+        // @include for-md{
+        //     display: block;
+        // }
+    }
+    @include for-md{
+        padding: vw2(26) vw2(40) 0 vw2(20);
+    }
+    
     &__inner-img{
         position: absolute;
     }
     &__inner-img-1{
         top: 0;
         left: 0;
+        width: vw(53);
+        height: vw(199);
     }
     &__inner-img-2{
         left: 0;
         top: vw(335);
+        width: vw(56);
+        height: vw(56);
     }
     &__inner-img-3{
         left: 0;
         top: vw(398);
+        width: vw(38);
+        height: vw(38);
     }
     &__inner-img-4{
         left: vw(54);
         top: vw(478);
+        width: vw(151);
+        height: vw(151);
     }
     &__inner-img-5{
         left: vw(772);
         top: vw(112);
+        width: vw(30);
+        height: vw(30);
     }
     &__inner-img-6{
         left: vw(772);
         top: vw(834);
+        width: vw(82);
+        height: vw(82);
     }
     &__inner-img-7{
         left: vw(1210);
         top: vw(104);
+        width: vw(56);
+        height: vw(56);
     }
     &__inner-img-8{
         left: vw(1466);
         top: vw(10);
+        width: vw(82);
+        height: vw(82);
     }
     &__text-block{
         max-width: vw(630);
@@ -84,6 +121,11 @@
         font-size: vw(44);
         line-height: vw(38);
         text-transform: uppercase;
+        @include for-md{
+            font-size: vw2(18);
+            line-height: vw2(16);
+        }
+        
     }
     &__text{
         margin-top: vw(33);
@@ -140,6 +182,9 @@
     &__type-img-block{
         margin-right: vw(26);
     }
+    &__type-img{
+        max-width: vw(71);
+    }
     &__type-text{
         @extend %circe-bold;
         font-size: vw(24);
@@ -156,6 +201,7 @@
         min-width: vw(78);
     }
     &__material-img{
+        max-width: vw(59);
         margin: 0 auto;
     }
     &__material-text{
@@ -179,6 +225,8 @@
         bottom: vw(48);
         left: 50%;
         transform: translateX(-50%);
+        font-size: vw(24);
+        line-height: vw(29);
     }
     .slide-arrow{
         position: absolute;

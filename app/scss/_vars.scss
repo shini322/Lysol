@@ -10,8 +10,7 @@ $dark-grey: #6B818C;
 $red: #DB423B;
 
 $resolution: 1920;
-$resolution2: 320;
-$resolution3:669;
+$resolution2:375;
 
 %circe-regular{
   font-family: 'Circe-Regular';
@@ -33,14 +32,10 @@ $resolution3:669;
 //   @return (($px/$resolution) * 100)  + vw;
 // }
 @function vw2($px) {
-  @return (($px/$resolution2) * 100)+vw;
+  @return (($px/$resolution2) * 100) + vw;
 }
-@function vw3($px) {
-  @return (($px/$resolution3) * 100)+vw;
-}
-
-// @function vw($px) {
-//   @return (($px/$resolution) * 100)+vw;
+// @function vw3($px) {
+//   @return (($px/$resolution3) * 100)+vw;
 // }
 
 // @mixin for-xxl {
@@ -50,18 +45,18 @@ $resolution3:669;
 //     @media (min-width: 1024px) and (max-width: 1470px) { @content; }
 //   }
 
-// @mixin for-lg {
-//     @media (max-width: 1200px) { @content; }
-//   }
+@mixin for-lg {
+    @media (max-width: 1200px) { @content; }
+  }
 //   @mixin for-lit-desktop {
 //     @media (max-width: 1050px) { @content; }
 //   }
 //   @mixin for-md-desktop{
 //     @media (min-width: 1025px) { @content; }
 //   }
-//   @mixin for-md {
-//     @media (max-width: 1024px) { @content; }
-//   }
+  @mixin for-md {
+    @media (max-width: 1024px) { @content; }
+  }
 //   @mixin for-lit-md {
 //     @media (max-width: 850px) { @content; }
 //   }
