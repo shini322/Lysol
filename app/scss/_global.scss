@@ -238,8 +238,8 @@ h2{
             height: vw(34);
             color: $blue;
             @include for-md{
-                width: vw2(60);
-                height: vw2(60);
+                width: vw2(25);
+                height: vw2(25);
             }
             @include for-tiny-tablet{
                 width: vw3(20);
