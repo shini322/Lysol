@@ -25,6 +25,10 @@ a{
     min-height: 100vh;
     overflow: hidden;
     z-index: 9999;
+    @include for-md{
+        min-height: auto;
+        height: auto !important;
+    }
 }
 .container{
     position: relative;
@@ -43,15 +47,21 @@ a{
     }
 }
 h1{
+    position: relative;
     margin: 0;
     @extend %circe-bold;
     font-size: vw(120);
     line-height: vw(120);
     text-transform: uppercase;
     transition: .3s;
+    z-index: 5;
     @include for-md{
         font-size: vw2(50);
         line-height: vw2(50);
+    }
+    @include for-tiny-tablet{
+        font-size: vw3(50);
+        line-height: vw3(50);
     }
 }
 h2{
@@ -62,11 +72,19 @@ h2{
     text-transform: uppercase;
     color: $blue;
     @include for-md{
-        font-size: vw2(50);
-        line-height: vw2(50);
+        font-size: vw2(26);
+        line-height: vw2(31);
     }
+    @include for-tiny-tablet{
+        font-size: vw3(26);
+        line-height: vw3(31);
+    }
+    
 }
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @extend %circe-eb;
     padding: vw(16) vw(42);
     background-color: $blue;
@@ -76,7 +94,7 @@ h2{
     cursor: pointer;
     transition: .3s;
     @include for-md{
-        padding: vw2(8) vw2(20);
+        padding: vw2(10) vw2(20);
     }
     &:hover{
         background-color: #3474CF;

@@ -23,21 +23,24 @@ $(window).scroll(function() {
 
   $('#wrapper').fullpage({
     autoScrolling:true,
-    scrollHorizontally: true
+    scrollHorizontally: true,
+    responsiveWidth: 1024
   });
 
+  
 
-  $('[data-fancybox="wash"]').fancybox({
-    btnTpl: {
+
+  // $('[data-fancybox="wash"]').fancybox({
+  //   btnTpl: {
   
-      arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev" title="{{PREV}}">' +
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>' +
-        "</button>",
+  //     arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev" title="{{PREV}}">' +
+  //       '<i class="fa fa-angle-left" aria-hidden="true"></i>' +
+  //       "</button>",
   
-      arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right next" title="{{NEXT}}">' +
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>' +
-        "</button>"
+  //     arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right next" title="{{NEXT}}">' +
+  //       '<i class="fa fa-angle-right" aria-hidden="true"></i>' +
+  //       "</button>"
   
-    }
+  //   }
   
-  });
+  // });

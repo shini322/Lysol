@@ -8,7 +8,13 @@
     position: fixed;
     top: vw(28);
     left: vw(50);    
-    z-index: 2;
+    z-index: 5;
+    @include for-md{
+        top: vw2(26);
+    }
+    @include for-tiny-tablet{
+        top: vw3(26);
+    }
 }
 .logo{
     position: relative;
@@ -17,6 +23,7 @@
     z-index: 4;
     max-width: vw(171);
     height: vw(160);
+    
     &::before{
         content: "";
         position: absolute;
@@ -35,11 +42,33 @@
         z-index: 5;
         max-width: vw(171);
         height: vw(160);
+        @include for-md{
+            max-width: vw2(81);
+            height: vw2(75);
+        }
+        @include for-tiny-tablet{
+            max-width: vw3(81);
+            height: vw3(75);
+        }
     }
     &__text{
         margin-left: vw(43);
         font-size: vw(24);
         line-height: vw(28);
+        @include for-md{
+            display: block;
+            min-width: vw2(140);
+            font-size: vw2(13);
+            line-height: vw2(19);
+            br{
+                display: none;
+            }
+        }
+        @include for-tiny-tablet{
+            min-width: vw3(140);
+            font-size: vw3(13);
+            line-height: vw3(19);
+        }
     }
 }
 .hero{
@@ -52,16 +81,19 @@
             align-items: center;
             max-height: 100%;
         }
-        // @include for-md{
-        //     display: block;
-        // }
+        @include for-md{
+            height: auto !important;
+        }
     }
     @include for-md{
-        padding: vw2(26) vw2(40) 0 vw2(20);
+        padding: vw2(112) vw2(40) vw2(30) vw2(20);
     }
-    
+    @include for-tiny-tablet{
+        padding: vw3(112) vw3(40) vw3(228) vw3(20);
+    }
     &__inner-img{
         position: absolute;
+        z-index: 5;
     }
     &__inner-img-1{
         top: 0;
@@ -113,45 +145,99 @@
     }
     &__text-block{
         max-width: vw(630);
+        @include for-md{
+            max-width: 100%;
+            width: 50%;
+        }
+        @include for-tiny-tablet{
+            width: 100%;
+        }
     }
     
     &__subtitle{
+        position: relative;
         margin-top: vw(15);
         @extend %circe-eb;
         font-size: vw(44);
         line-height: vw(38);
         text-transform: uppercase;
+        z-index: 5;
         @include for-md{
             font-size: vw2(18);
-            line-height: vw2(16);
+            line-height: vw2(22);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(18);
+            line-height: vw3(22);
         }
         
     }
     &__text{
+        position: relative;
         margin-top: vw(33);
         font-size: vw(24);
         line-height: vw(34);
+        z-index: 5;
+        @include for-md{
+            width: 100%;
+            font-size: vw2(13);
+            line-height: vw2(18);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(18);
+        }
     }
     &__button{
+        position: relative;
         font-size: vw(24);
         line-height: vw(40);
         margin-top: vw(60);
         max-width: vw(352);
         width: 100%;
+        z-index: 5;
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(17);
+            max-width: vw2(200);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(17);
+            max-width: vw3(200);
+        }
     }
     &__img{
-        display: none;
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0;
         z-index: 2;
+        max-width: vw(1469);  
+        @include for-md{
+            max-width: vw2(382);
+        }  
+        @include for-tiny-tablet{
+            max-width: vw3(382);
+        }    
     }
     
 }
 .instruction{
     padding: vw(106) 0 vw(130);
+    @include for-md{
+        padding: vw2(23) 0 vw2(28);
+    }
+    @include for-tiny-tablet{
+        padding: vw3(23) 0 vw3(28);
+    }
     &__row{
         margin-top: vw(92);
+        @include for-md{
+            margin-top: vw2(30);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(30);
+        }
     }
     &__item{
         position: relative;
