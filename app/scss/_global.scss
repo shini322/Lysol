@@ -144,6 +144,9 @@ h2{
         display: block;
         max-height: vw(770);
         border-radius: 30px;
+        &--mobile{
+            display: none;
+        }
         @include for-md{
             display: none;
             height: 100%;
@@ -229,7 +232,7 @@ h2{
         width: vw(68);
         height: vw(68);
         top: vw(25);
-        right: vw(22);
+        right: vw(22) !important;
         border-radius: 50%;
         border: 1px solid $blue;
         background-color: $white;
@@ -249,7 +252,7 @@ h2{
         @include for-md{
             width: vw2(38);
             height: vw2(38);
-            right: 50%;
+            right: 50% !important;
             transform: translateX(50%);
             top: vw2(9);
         }
@@ -267,4 +270,59 @@ h2{
 }
 .fancybox-navigation .fancybox-button{
     opacity: 1;
+}
+.fancybox-button{
+    display: flex;
+    visibility: visible !important;
+    padding: 0 !important;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $blue;
+    width: vw(66) !important;
+    height: vw(66) !important;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white;
+    z-index: 10;
+    @include for-md{
+        width: vw2(37) !important;
+        height: vw2(37) !important;            
+    }
+    @include for-tiny-tablet{
+        display: none;
+        width: vw3(37) !important;
+        height: vw3(37) !important;
+    }
+    > div{
+        display: flex;
+        padding: 0 !important;
+        align-items: center;
+        justify-content: center;
+    }
+    &--arrow_right{
+        right: vw(96) !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+    &--arrow_left{
+        left: vw(96) !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+    svg{
+        fill: $blue;
+        stroke: $blue;
+        width: vw(45);
+        height: vw(25);
+        @include for-md{
+            height: vw2(12);
+            width: vw2(45);  
+            height: vw2(20);          
+        }
+        @include for-tiny-tablet{
+            height: vw3(12);
+            width: vw3(45);  
+            height: vw3(20); 
+        }
+    }
 }

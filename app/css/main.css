@@ -4624,6 +4624,10 @@ h2 {
   border-radius: 30px;
 }
 
+.wash__img--mobile {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .wash__img {
     display: none;
@@ -4740,7 +4744,7 @@ h2 {
   width: 3.54167vw;
   height: 3.54167vw;
   top: 1.30208vw;
-  right: 1.14583vw;
+  right: 1.14583vw !important;
   border-radius: 50%;
   border: 1px solid #16478E;
   background-color: #FFFFFF;
@@ -4770,7 +4774,7 @@ h2 {
   .wash .fancybox-close-small {
     width: 5.42857vw;
     height: 5.42857vw;
-    right: 50%;
+    right: 50% !important;
     transform: translateX(50%);
     top: 1.28571vw;
   }
@@ -4791,6 +4795,78 @@ h2 {
 
 .fancybox-navigation .fancybox-button {
   opacity: 1;
+}
+
+.fancybox-button {
+  display: flex;
+  visibility: visible !important;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #16478E;
+  width: 3.4375vw !important;
+  height: 3.4375vw !important;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .fancybox-button {
+    width: 5.28571vw !important;
+    height: 5.28571vw !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .fancybox-button {
+    display: none;
+    width: 9.86667vw !important;
+    height: 9.86667vw !important;
+  }
+}
+
+.fancybox-button > div {
+  display: flex;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancybox-button--arrow_right {
+  right: 5vw !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.fancybox-button--arrow_left {
+  left: 5vw !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.fancybox-button svg {
+  fill: #16478E;
+  stroke: #16478E;
+  width: 2.34375vw;
+  height: 1.30208vw;
+}
+
+@media (max-width: 1024px) {
+  .fancybox-button svg {
+    height: 1.71429vw;
+    width: 6.42857vw;
+    height: 2.85714vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .fancybox-button svg {
+    height: 3.2vw;
+    width: 12vw;
+    height: 5.33333vw;
+  }
 }
 
 .header {
