@@ -94,31 +94,70 @@ h2{
     cursor: pointer;
     transition: .3s;
     @include for-md{
-        padding: vw2(10) vw2(20);
+        padding: vw2(7) vw2(20);
+    }
+    @include for-tiny-tablet{
+        padding: vw3(7) vw3(20);
     }
     &:hover{
         background-color: #3474CF;
     }
 }
 .wash{
+    display: none;
     padding: 0;
     max-width: vw(1410);
     width: 100%;
     margin: 0 auto;
     border-radius: 30px;
     cursor: auto !important;
+    @include for-md{
+        border-radius: 0;   
+        max-width: vw2(375);
+    }
+    @include for-tiny-tablet{
+        max-width: vw3(375);
+    }
     &__inner{
         display: flex;
         align-items: center;
         max-height: vw(770);
+        @include for-md{
+            max-height: none;  
+            flex-direction: column;
+            justify-content: center;          
+        }
     }
     &__img-block{
         max-width: vw(623);
+        @include for-md{
+            max-width: 100%;
+            width: 100%;
+            height: vw2(320);            
+        }
+        @include for-tiny-tablet{
+            max-height: vw3(320);
+            height: 100%;
+        }
     }
     &__img{
         display: block;
         max-height: vw(770);
         border-radius: 30px;
+        @include for-md{
+            display: none;
+            height: 100%;
+            max-height: vw2(320);   
+            border-radius: 0;
+            object-fit: fill;
+            &--mobile{
+                display: block;
+                width: 100%;
+            }
+        }
+        @include for-tiny-tablet{
+            max-height: vw3(375);
+        }
     }
     &__text-block{
         padding: vw(66) vw(69) vw(62) vw(80);
@@ -126,17 +165,43 @@ h2{
         max-width: vw(785);
         max-height: vw(765);
         box-sizing: border-box;
+        @include for-md{
+            padding: vw2(31) vw2(21) vw2(45);   
+            width: 100%;
+            max-width: 100%;   
+            max-height: 100%;
+        }
+        @include for-tiny-tablet{
+            padding: vw3(31) vw3(21) vw3(45);
+        }
     }
     &__title{
         @extend %circe-eb;
         font-size: vw(60);
+        line-height: vw(64);
         color: $blue;
+        @include for-md{
+            font-size: vw2(22);
+            line-height: vw2(32);      
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(22);
+            line-height: vw3(32);
+        }
     }
     &__subtitle{
         @extend %circe-bold;
         font-size: vw(28);
         text-transform: uppercase;
         color: $blue;
+        @include for-md{
+            font-size: vw2(12);
+            line-height: vw2(26);      
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(12);
+            line-height: vw3(26); 
+        }
     }
     &__text{
         margin-top: vw(25);
@@ -146,6 +211,14 @@ h2{
         color: $black;
         &--blue{
             color: $blue;
+        }
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(18);      
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(18); 
         }
     }
     .fancybox-close-small{
@@ -164,6 +237,26 @@ h2{
             width: vw(34);
             height: vw(34);
             color: $blue;
+            @include for-md{
+                width: vw2(60);
+                height: vw2(60);
+            }
+            @include for-tiny-tablet{
+                width: vw3(20);
+                height: vw3(20); 
+            }
+        }
+        @include for-md{
+            width: vw2(38);
+            height: vw2(38);
+            right: 50%;
+            transform: translateX(50%);
+            top: vw2(9);
+        }
+        @include for-tiny-tablet{
+            width: vw3(38);
+            height: vw3(38);
+            top: vw3(9);
         }
     }
     
