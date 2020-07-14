@@ -310,8 +310,7 @@ h2{
         transform: translateY(-50%);
     }
     svg{
-        fill: $blue;
-        stroke: $blue;
+        color: $blue;
         width: vw(45);
         height: vw(25);
         @include for-md{

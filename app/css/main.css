@@ -4847,8 +4847,7 @@ h2 {
 }
 
 .fancybox-button svg {
-  fill: #16478E;
-  stroke: #16478E;
+  color: #16478E;
   width: 2.34375vw;
   height: 1.30208vw;
 }
