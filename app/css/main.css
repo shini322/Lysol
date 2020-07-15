@@ -4510,8 +4510,8 @@ h1 {
 
 @media (max-width: 650px) {
   h1 {
-    font-size: 10.66667vw;
-    line-height: 10.66667vw;
+    font-size: 13.33333vw;
+    line-height: 13.33333vw;
   }
 }
 
@@ -4532,8 +4532,8 @@ h2 {
 
 @media (max-width: 650px) {
   h2 {
-    font-size: 5.54667vw;
-    line-height: 6.61333vw;
+    font-size: 6.93333vw;
+    line-height: 8.26667vw;
   }
 }
 
@@ -4558,7 +4558,7 @@ h2 {
 
 @media (max-width: 650px) {
   .button {
-    padding: 1.49333vw 4.26667vw;
+    padding: 1.86667vw 5.33333vw;
   }
 }
 
@@ -4585,7 +4585,7 @@ h2 {
 
 @media (max-width: 650px) {
   .wash {
-    max-width: 80vw;
+    max-width: 100vw;
   }
 }
 
@@ -4617,7 +4617,7 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__img-block {
-    max-height: 68.26667vw;
+    max-height: 85.33333vw;
     height: 100%;
   }
 }
@@ -4648,7 +4648,7 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__img {
-    max-height: 80vw;
+    max-height: 100vw;
   }
 }
 
@@ -4671,7 +4671,7 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__text-block {
-    padding: 6.61333vw 4.48vw 9.6vw;
+    padding: 8.26667vw 5.6vw 12vw;
   }
 }
 
@@ -4690,8 +4690,8 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__title {
-    font-size: 4.69333vw;
-    line-height: 6.82667vw;
+    font-size: 5.86667vw;
+    line-height: 8.53333vw;
   }
 }
 
@@ -4710,8 +4710,8 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__subtitle {
-    font-size: 2.56vw;
-    line-height: 5.54667vw;
+    font-size: 3.2vw;
+    line-height: 6.93333vw;
   }
 }
 
@@ -4735,8 +4735,8 @@ h2 {
 
 @media (max-width: 650px) {
   .wash__text {
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
   }
 }
 
@@ -4769,8 +4769,8 @@ h2 {
 
 @media (max-width: 650px) {
   .wash .fancybox-close-small svg {
-    width: 4.26667vw;
-    height: 4.26667vw;
+    width: 5.33333vw;
+    height: 5.33333vw;
   }
 }
 
@@ -4786,9 +4786,9 @@ h2 {
 
 @media (max-width: 650px) {
   .wash .fancybox-close-small {
-    width: 8.10667vw;
-    height: 8.10667vw;
-    top: 1.92vw;
+    width: 10.13333vw;
+    height: 10.13333vw;
+    top: 2.4vw;
   }
 }
 
@@ -4826,8 +4826,8 @@ h2 {
 @media (max-width: 650px) {
   .fancybox-button {
     display: none;
-    width: 7.89333vw !important;
-    height: 7.89333vw !important;
+    width: 9.86667vw !important;
+    height: 9.86667vw !important;
   }
 }
 
@@ -4866,9 +4866,9 @@ h2 {
 
 @media (max-width: 650px) {
   .fancybox-button svg {
-    height: 2.56vw;
-    width: 9.6vw;
-    height: 4.26667vw;
+    height: 3.2vw;
+    width: 12vw;
+    height: 5.33333vw;
   }
 }
 
@@ -4887,7 +4887,13 @@ h2 {
 
 @media (max-width: 650px) {
   .header {
-    top: 5.54667vw;
+    top: 6.93333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .header {
+    left: 2.77778vh;
   }
 }
 
@@ -4928,8 +4934,15 @@ h2 {
 
 @media (max-width: 650px) {
   .logo__img {
-    max-width: 17.28vw;
-    height: 16vw;
+    max-width: 21.6vw;
+    height: 20vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .logo__img {
+    max-width: 22.5vh;
+    height: 20.83333vh;
   }
 }
 
@@ -4953,9 +4966,17 @@ h2 {
 
 @media (max-width: 650px) {
   .logo__text {
-    min-width: 29.86667vw;
-    font-size: 2.77333vw;
-    line-height: 4.05333vw;
+    min-width: 37.33333vw;
+    font-size: 3.46667vw;
+    line-height: 5.06667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .logo__text {
+    min-width: 38.88889vh;
+    font-size: 3.61111vh;
+    line-height: 5.27778vh;
   }
 }
 
@@ -4987,7 +5008,7 @@ h2 {
 
 @media (max-width: 650px) {
   .hero {
-    padding: 23.89333vw 8.53333vw 48.64vw 4.26667vw;
+    padding: 29.86667vw 10.66667vw 60.8vw 5.33333vw;
   }
 }
 
@@ -5087,8 +5108,8 @@ h2 {
 
 @media (max-width: 650px) {
   .hero__subtitle {
-    font-size: 3.84vw;
-    line-height: 4.69333vw;
+    font-size: 4.8vw;
+    line-height: 5.86667vw;
   }
 }
 
@@ -5110,8 +5131,8 @@ h2 {
 
 @media (max-width: 650px) {
   .hero__text {
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
   }
 }
 
@@ -5135,9 +5156,9 @@ h2 {
 
 @media (max-width: 650px) {
   .hero__button {
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
-    max-width: 42.66667vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
+    max-width: 53.33333vw;
   }
 }
 
@@ -5157,7 +5178,13 @@ h2 {
 
 @media (max-width: 650px) {
   .hero__img {
-    max-width: 81.49333vw;
+    max-width: 101.86667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .hero__img {
+    max-width: 106.11111vh;
   }
 }
 
@@ -5173,7 +5200,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction {
-    padding: 4.90667vw 0 5.97333vw;
+    padding: 6.13333vw 0 7.46667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction {
+    padding: 4.16667vh 0 7.77778vh;
   }
 }
 
@@ -5189,7 +5222,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__row {
-    margin-top: 6.4vw;
+    margin-top: 8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__row {
+    margin-top: 2.77778vh;
   }
 }
 
@@ -5228,9 +5267,17 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__item::before {
-    width: 5.33333vw;
-    height: 5.33333vw;
-    top: 3.2vw;
+    width: 6.66667vw;
+    height: 6.66667vw;
+    top: 4vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__item::before {
+    width: 6.94444vh;
+    height: 6.94444vh;
+    top: 4.16667vh;
   }
 }
 
@@ -5245,8 +5292,15 @@ h2 {
 @media (max-width: 650px) {
   .instruction__item {
     display: block !important;
-    padding: 12.8vw 4.26667vw 6.4vw;
-    height: 58.88vw;
+    padding: 16vw 5.33333vw 8vw;
+    height: 73.6vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__item {
+    padding: 16.66667vh 5.55556vh 8.33333vh;
+    height: 69.44444vh;
   }
 }
 
@@ -5268,7 +5322,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__type-img-block {
-    margin-right: 3.2vw;
+    margin-right: 4vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__type-img-block {
+    margin-right: 4.16667vh;
   }
 }
 
@@ -5285,7 +5345,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__type-img {
-    max-width: 8.74667vw;
+    max-width: 10.93333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__type-img {
+    max-width: 11.38889vh;
   }
 }
 
@@ -5304,8 +5370,15 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__type-text {
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__type-text {
+    font-size: 3.61111vh;
+    line-height: 5vh;
   }
 }
 
@@ -5323,7 +5396,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__material {
-    margin-top: 5.33333vw;
+    margin-top: 6.66667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__material {
+    margin-top: 6.94444vh;
   }
 }
 
@@ -5340,7 +5419,13 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__material-img-block {
-    margin-right: 2.98667vw;
+    margin-right: 3.73333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .instruction__material-img-block {
+    margin-right: 3.88889vh;
   }
 }
 
@@ -5357,7 +5442,7 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__material-img {
-    max-width: 8.53333vw;
+    max-width: 10.66667vw;
   }
 }
 
@@ -5376,8 +5461,8 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__material-text {
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
   }
 }
 
@@ -5407,11 +5492,11 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction__button {
-    max-width: 27.73333vw;
-    min-height: 4.26667vw;
-    font-size: 2.34667vw;
-    line-height: 3.62667vw;
-    bottom: 6.4vw;
+    max-width: 34.66667vw;
+    min-height: 5.33333vw;
+    font-size: 2.93333vw;
+    line-height: 4.53333vw;
+    bottom: 8vw;
   }
 }
 
@@ -5437,8 +5522,8 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction .slide-arrow {
-    width: 7.89333vw;
-    height: 7.89333vw;
+    width: 9.86667vw;
+    height: 9.86667vw;
   }
 }
 
@@ -5463,7 +5548,19 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction .arrow-next .icon {
-    height: 2.56vw;
+    height: 3.2vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .instruction .arrow-next {
+    right: -5vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .instruction .arrow-next {
+    right: -9.33333vw;
   }
 }
 
@@ -5488,7 +5585,19 @@ h2 {
 
 @media (max-width: 650px) {
   .instruction .arrow-prev .icon {
-    height: 2.56vw;
+    height: 3.2vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .instruction .arrow-prev {
+    left: -5vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .instruction .arrow-prev {
+    left: -9.33333vw;
   }
 }
 
@@ -5497,13 +5606,19 @@ h2 {
 }
 
 .game {
-  padding: 4.47917vw 0 0;
+  padding: 4.47917vw 0 7.60417vw;
   background-color: #4CABE5;
 }
 
 @media (max-width: 1023px) {
   .game {
-    padding: 5.14286vw 0 0;
+    padding: 12.28571vw 0 42.14286vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .game {
+    padding: 22.93333vw 0 78.66667vw;
   }
 }
 
@@ -5561,6 +5676,16 @@ h2 {
   color: #FFFFFF;
 }
 
+.game__text-block {
+  width: 50%;
+}
+
+@media (max-width: 1023px) {
+  .game__text-block {
+    width: 100%;
+  }
+}
+
 .game__text {
   margin-top: 1.82292vw;
   font-size: 1.25vw;
@@ -5577,9 +5702,9 @@ h2 {
 
 @media (max-width: 650px) {
   .game__text {
-    margin-top: 6.4vw;
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    margin-top: 8vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
   }
 }
 
@@ -5599,13 +5724,16 @@ h2 {
 
 @media (max-width: 650px) {
   .game__button {
-    margin-top: 4.26667vw;
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
+    margin-top: 5.33333vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
   }
 }
 
 .game__img-block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: 46.5625vw;
   width: 44.84375vw;
 }
@@ -5620,18 +5748,24 @@ h2 {
 
 @media (max-width: 650px) {
   .game__img-block {
-    margin-top: 2.13333vw;
-    height: 60.37333vw;
-    width: 62.72vw;
+    margin-top: 2.66667vw;
+    height: 75.46667vw;
+    width: 78.4vw;
   }
 }
 
-@media (max-width: 1023px) {
-  .game__img {
-    display: block;
-    width: 100%;
-    height: 100%;
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game__img-block {
+    margin-top: 2.77778vh;
+    height: 78.61111vh;
+    width: 81.66667vh;
   }
+}
+
+.game__img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .interview__inner {
@@ -5646,7 +5780,13 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__inner {
-    padding: 7.68vw 0 22.18667vw;
+    padding: 9.6vw 0 27.73333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__inner {
+    padding: 10vh 0 28.88889vh;
   }
 }
 
@@ -5669,9 +5809,17 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__total {
-    margin-top: 2.13333vw;
-    font-size: 2.77333vw;
-    line-height: 2.56vw;
+    margin-top: 2.66667vw;
+    font-size: 3.46667vw;
+    line-height: 3.2vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__total {
+    margin-top: 2.77778vh;
+    font-size: 3.61111vh;
+    line-height: 3.33333vh;
   }
 }
 
@@ -5690,9 +5838,9 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__subtitle {
-    margin-top: 2.13333vw;
-    font-size: 3.41333vw;
-    line-height: 5.12vw;
+    margin-top: 2.66667vw;
+    font-size: 4.26667vw;
+    line-height: 6.4vw;
   }
 }
 
@@ -5709,7 +5857,13 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__row--mt {
-    margin-top: 17.06667vw;
+    margin-top: 21.33333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__row--mt {
+    margin-top: 13.88889vh;
   }
 }
 
@@ -5731,7 +5885,13 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__container {
-    margin-top: 6.4vw;
+    margin-top: 8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__container {
+    margin-top: 8.33333vh;
   }
 }
 
@@ -5757,9 +5917,17 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__item {
-    padding-left: 13.65333vw;
-    font-size: 3.41333vw;
-    line-height: 5.12vw;
+    padding-left: 17.06667vw;
+    font-size: 4.26667vw;
+    line-height: 6.4vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__item {
+    padding-left: 17.77778vh;
+    font-size: 3.61111vh;
+    line-height: 4.72222vh;
   }
 }
 
@@ -5800,10 +5968,10 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__item::before {
-    font-size: 3.41333vw;
-    line-height: 2.98667vw;
-    width: 10.34667vw;
-    height: 10.34667vw;
+    font-size: 4.26667vw;
+    line-height: 3.73333vw;
+    width: 12.93333vw;
+    height: 12.93333vw;
   }
 }
 
@@ -5827,7 +5995,13 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__item + .interview__item {
-    margin-top: 7.25333vw;
+    margin-top: 9.06667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__item + .interview__item {
+    margin-top: 12.5vh;
   }
 }
 
@@ -5855,8 +6029,15 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__statistics--big {
-    font-size: 6.4vw;
-    line-height: 6.4vw;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__statistics--big {
+    font-size: 8.33333vh;
+    line-height: 8.33333vh;
   }
 }
 
@@ -5870,9 +6051,17 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__statistics {
-    max-width: 27.30667vw;
-    font-size: 3.41333vw;
-    line-height: 3.84vw;
+    max-width: 34.13333vw;
+    font-size: 4.26667vw;
+    line-height: 4.8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__statistics {
+    max-width: 35.55556vh;
+    font-size: 3.88889vh;
+    line-height: 5vh;
   }
 }
 
@@ -5894,8 +6083,15 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__statistics svg {
-    width: 44.58667vw;
-    height: 44.58667vw;
+    width: 55.73333vw;
+    height: 55.73333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .interview__statistics svg {
+    width: 47.22222vh;
+    height: 47.22222vh;
   }
 }
 
@@ -5915,11 +6111,11 @@ h2 {
 
 @media (max-width: 650px) {
   .interview__button {
-    line-height: 9.38667vw;
+    line-height: 11.73333vw;
     margin-left: 0;
-    margin-top: 17.06667vw;
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
+    margin-top: 21.33333vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
   }
 }
 
@@ -5935,7 +6131,7 @@ h2 {
 
 @media (max-width: 650px) {
   .interview-second .interview__inner {
-    padding-bottom: 18.13333vw;
+    padding-bottom: 22.66667vw;
   }
 }
 
@@ -5955,7 +6151,7 @@ h2 {
 
 @media (max-width: 650px) {
   .footer {
-    padding: 2.56vw 1.70667vw;
+    padding: 3.2vw 2.13333vw;
   }
 }
 
@@ -5977,7 +6173,7 @@ h2 {
 
 @media (max-width: 650px) {
   .footer__social {
-    margin-left: 4.26667vw;
+    margin-left: 5.33333vw;
   }
 }
 
@@ -6000,8 +6196,8 @@ h2 {
 
 @media (max-width: 650px) {
   .footer__social-link .icon {
-    max-width: 3.04vw;
-    max-height: 3.62667vw;
+    max-width: 3.8vw;
+    max-height: 4.53333vw;
   }
 }
 
@@ -6017,7 +6213,7 @@ h2 {
 
 @media (max-width: 650px) {
   .footer__social-link + .footer__social-link {
-    margin-left: 2.98667vw;
+    margin-left: 3.73333vw;
   }
 }
 
@@ -6036,8 +6232,8 @@ h2 {
 
 @media (max-width: 650px) {
   .footer__copy {
-    font-size: 2.77333vw;
-    line-height: 4.05333vw;
+    font-size: 3.46667vw;
+    line-height: 5.06667vw;
   }
 }
 
@@ -6054,7 +6250,13 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page {
-    padding: 2.98667vw 0 8.10667vw;
+    padding: 3.73333vw 0 10.13333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page {
+    padding: 5.55556vh 0 10.55556vh;
   }
 }
 
@@ -6084,8 +6286,8 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__total {
-    font-size: 2.77333vw;
-    line-height: 5.12vw;
+    font-size: 3.46667vw;
+    line-height: 6.4vw;
   }
 }
 
@@ -6108,9 +6310,17 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__title {
-    margin-top: 2.13333vw;
-    font-size: 4.69333vw;
-    line-height: 5.12vw;
+    margin-top: 2.66667vw;
+    font-size: 5.86667vw;
+    line-height: 6.4vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__title {
+    margin-top: 2.77778vh;
+    font-size: 6.11111vh;
+    line-height: 6.66667vh;
   }
 }
 
@@ -6149,7 +6359,7 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__container {
-    margin-top: 2.77333vw;
+    margin-top: 3.46667vw;
   }
 }
 
@@ -6175,7 +6385,7 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page--item {
-    padding-left: 11.73333vw;
+    padding-left: 14.66667vw;
   }
 }
 
@@ -6195,10 +6405,10 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page--item::before {
-    width: 8.53333vw;
-    height: 8.53333vw;
-    font-size: 3.41333vw;
-    line-height: 2.56vw;
+    width: 10.66667vw;
+    height: 10.66667vw;
+    font-size: 4.26667vw;
+    line-height: 3.2vw;
   }
 }
 
@@ -6222,7 +6432,7 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__item + .game-page__item {
-    margin-top: 6.4vw;
+    margin-top: 8vw;
   }
 }
 
@@ -6241,9 +6451,17 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__img-block {
-    margin-top: 2.13333vw;
-    width: 59.73333vw;
-    height: 51.2vw;
+    margin-top: 2.66667vw;
+    width: 74.66667vw;
+    height: 64vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__img-block {
+    margin-top: 0;
+    width: 77.77778vh;
+    height: 66.66667vh;
   }
 }
 
@@ -6263,9 +6481,17 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__img-block-2 {
-    margin: 2.13333vw auto 0;
-    width: 59.73333vw;
-    height: 50.98667vw;
+    margin: 2.66667vw auto 0;
+    width: 74.66667vw;
+    height: 63.73333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__img-block-2 {
+    margin: 0 auto;
+    width: 77.77778vh;
+    height: 66.38889vh;
   }
 }
 
@@ -6292,9 +6518,17 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__subtitle {
-    margin-top: 2.98667vw;
-    font-size: 5.12vw;
-    line-height: 5.97333vw;
+    margin-top: 3.73333vw;
+    font-size: 6.4vw;
+    line-height: 7.46667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__subtitle {
+    margin-top: 0.55556vh;
+    font-size: 5vh;
+    line-height: 6.11111vh;
   }
 }
 
@@ -6318,9 +6552,17 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__text {
-    margin-top: 2.34667vw;
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    margin-top: 2.93333vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__text {
+    margin-top: 1.38889vh;
+    font-size: 3.05556vh;
+    line-height: 4.44444vh;
   }
 }
 
@@ -6342,10 +6584,19 @@ h2 {
 
 @media (max-width: 650px) {
   .game-page__button {
-    margin-top: 4.26667vw;
-    min-height: 9.38667vw;
-    font-size: 2.77333vw;
-    line-height: 2.77333vw;
+    margin-top: 5.33333vw;
+    min-height: 11.73333vw;
+    font-size: 3.46667vw;
+    line-height: 3.46667vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-page__button {
+    margin-top: 1.38889vh;
+    min-height: 12.22222vh;
+    font-size: 3.33333vh;
+    line-height: 4.44444vh;
   }
 }
 
@@ -6362,7 +6613,13 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result {
-    padding: 2.98667vw 0 68.26667vw;
+    padding: 3.73333vw 0 85.33333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-result {
+    padding: 8.33333vh 0 88.88889vh;
   }
 }
 
@@ -6445,8 +6702,8 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__title {
-    font-size: 4.69333vw;
-    line-height: 8.10667vw;
+    font-size: 5.86667vw;
+    line-height: 10.13333vw;
   }
 }
 
@@ -6467,9 +6724,9 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__you {
-    margin-bottom: 2.13333vw;
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
+    margin-bottom: 2.66667vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
   }
 }
 
@@ -6489,9 +6746,9 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__text {
-    margin-top: 1.06667vw;
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    margin-top: 1.33333vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
   }
 }
 
@@ -6507,7 +6764,13 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social {
-    margin-top: 4.26667vw;
+    margin-top: 5.33333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-result__social {
+    margin-top: 2.77778vh;
   }
 }
 
@@ -6525,8 +6788,8 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social-text {
-    font-size: 2.77333vw;
-    line-height: 3.84vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
   }
 }
 
@@ -6544,7 +6807,7 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social-row {
-    margin-top: 2.13333vw;
+    margin-top: 2.66667vw;
   }
 }
 
@@ -6568,8 +6831,8 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social-link {
-    width: 8.24747vw;
-    height: 8.24747vw;
+    width: 10.30933vw;
+    height: 10.30933vw;
   }
 }
 
@@ -6593,8 +6856,8 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social-link .icon {
-    max-width: 3.5264vw;
-    max-height: 4.26667vw;
+    max-width: 4.408vw;
+    max-height: 5.33333vw;
   }
 }
 
@@ -6610,7 +6873,7 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__social-link + .game-result__social-link {
-    margin-left: 2.77333vw;
+    margin-left: 3.46667vw;
   }
 }
 
@@ -6630,9 +6893,18 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__button {
-    min-height: 9.38667vw;
-    font-size: 2.77333vw;
-    line-height: 3.62667vw;
+    min-height: 11.73333vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-result__button {
+    margin-top: 5.55556vh;
+    min-height: 12.22222vh;
+    font-size: 3.61111vh;
+    line-height: 4.72222vh;
   }
 }
 
@@ -6653,8 +6925,15 @@ h2 {
 
 @media (max-width: 650px) {
   .game-result__img-container {
-    width: 98.77333vw;
-    height: 56.96vw;
+    width: 123.46667vw;
+    height: 71.2vw;
+  }
+}
+
+@media (max-height: 880px) and (min-width: 1024px) {
+  .game-result__img-container {
+    width: 128.61111vh;
+    height: 74.16667vh;
   }
 }
 
