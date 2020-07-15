@@ -293,6 +293,7 @@
     }
     &__type-img-block{
         margin-right: vw(26);
+        min-width: vw(78);
         @include for-md{
             margin-right: vw2(15);
         }
@@ -303,6 +304,7 @@
     }
     &__type-img{
         max-width: vw(71);
+        margin: 0 auto;
         @include for-md{
             max-width: vw2(41);
         }

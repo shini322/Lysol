@@ -5257,6 +5257,7 @@ h2 {
 
 .instruction__type-img-block {
   margin-right: 1.35417vw;
+  min-width: 4.0625vw;
 }
 
 @media (max-width: 1024px) {
@@ -5273,6 +5274,7 @@ h2 {
 
 .instruction__type-img {
   max-width: 3.69792vw;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
