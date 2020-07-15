@@ -21,8 +21,9 @@
     display: flex;
     align-items: center;
     z-index: 4;
-    max-width: vw(171);
+    // max-width: vw(171);
     height: vw(160);
+    
     
     &::before{
         content: "";
@@ -463,5 +464,108 @@
     }
     .slick-slide{
         padding: 0 vw(30);
+    }
+}
+
+.game{
+    padding: vw(86) 0 0;
+    background-color: $light-blue;
+    @include for-md{
+        padding: vw2(36) 0 0;
+    }
+    &__microbes{
+        position: absolute;
+    }
+    &__microbes-1{
+        width: vw(102);
+        height: vw(143);
+        left: vw(100);
+        top: vw(150);
+    }
+    &__microbes-2{
+        width: vw(129);
+        height: vw(143);
+        left: vw(90);
+        top: vw(786);
+    }
+    &__microbes-3{
+        width: vw(69);
+        height: vw(71);
+        right: vw(132);
+        top: vw(170);
+    }
+    &__microbes-4{
+        width: vw(96);
+        height: vw(136);
+        right: vw(236);
+        top: vw(520);
+    }
+    &__microbes-5{
+        width: vw(110);
+        height: vw(114);
+        right: vw(36);
+        bottom: vw(123);
+    }
+    &__inner{
+        display: flex;
+        @include for-md{
+            flex-direction: column;
+        }
+    }
+    &__title{
+        text-align: left;
+        color: $white;
+    }
+    &__text{
+        margin-top: vw(35);
+        font-size: vw(24);
+        line-height: vw(34);
+        @include for-md{
+            margin-top: vw2(30);
+            font-size: vw2(13);
+            line-height: vw2(18);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(30);
+            font-size: vw3(13);
+            line-height: vw3(18);
+        }
+    }
+    &__button{
+        margin-top: vw(60);
+        font-size: vw(24);
+        line-height: vw(40);
+        @include for-md{
+            margin-top: vw2(20);
+            font-size: vw2(13);
+            line-height: vw2(17);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(20);
+            font-size: vw3(13);
+            line-height: vw3(17);
+        }
+    }
+    &__img-block{
+        height: vw(894);
+        width: vw(861);
+        @include for-md{
+            margin-top: vw2(10);
+            height: vw2(283);
+            width: vw2(294);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+            height: vw3(283);
+            width: vw3(294);
+        }
+    }
+    &__img{
+        
+        @include for-md{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
     }
 }

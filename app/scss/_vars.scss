@@ -34,10 +34,22 @@ $resolution2:700;
 // }
 @function vw2($px) {
   @return (($px/$resolution2) * 100) + vw;
+  
+  
 }
 @function vw3($px) {
   @return (($px/$resolution3) * 100)+vw;
 }
+
+// @media screen and (max-height: 768px){
+//   @function vw2($px) {
+//     @return (($px/$resolution2) * 100) * 0.7 + vw;
+      
+//   }
+// }
+
+
+
 
 // @mixin for-xxl {
 //   @media (max-width: 1805px) { @content; }
@@ -57,6 +69,7 @@ $resolution2:700;
 //   }
   @mixin for-md {
     @media (max-width: 1024px) { @content; }
+    
   }
 //   @mixin for-lit-md {
 //     @media (max-width: 850px) { @content; }

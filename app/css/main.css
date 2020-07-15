@@ -4892,7 +4892,6 @@ h2 {
   display: flex;
   align-items: center;
   z-index: 4;
-  max-width: 8.90625vw;
   height: 8.33333vw;
 }
 
@@ -5489,4 +5488,142 @@ h2 {
 
 .instruction .slick-slide {
   padding: 0 1.5625vw;
+}
+
+.game {
+  padding: 4.47917vw 0 0;
+  background-color: #4CABE5;
+}
+
+@media (max-width: 1024px) {
+  .game {
+    padding: 5.14286vw 0 0;
+  }
+}
+
+.game__microbes {
+  position: absolute;
+}
+
+.game__microbes-1 {
+  width: 5.3125vw;
+  height: 7.44792vw;
+  left: 5.20833vw;
+  top: 7.8125vw;
+}
+
+.game__microbes-2 {
+  width: 6.71875vw;
+  height: 7.44792vw;
+  left: 4.6875vw;
+  top: 40.9375vw;
+}
+
+.game__microbes-3 {
+  width: 3.59375vw;
+  height: 3.69792vw;
+  right: 6.875vw;
+  top: 8.85417vw;
+}
+
+.game__microbes-4 {
+  width: 5vw;
+  height: 7.08333vw;
+  right: 12.29167vw;
+  top: 27.08333vw;
+}
+
+.game__microbes-5 {
+  width: 5.72917vw;
+  height: 5.9375vw;
+  right: 1.875vw;
+  bottom: 6.40625vw;
+}
+
+.game__inner {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .game__inner {
+    flex-direction: column;
+  }
+}
+
+.game__title {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.game__text {
+  margin-top: 1.82292vw;
+  font-size: 1.25vw;
+  line-height: 1.77083vw;
+}
+
+@media (max-width: 1024px) {
+  .game__text {
+    margin-top: 4.28571vw;
+    font-size: 1.85714vw;
+    line-height: 2.57143vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .game__text {
+    margin-top: 8vw;
+    font-size: 3.46667vw;
+    line-height: 4.8vw;
+  }
+}
+
+.game__button {
+  margin-top: 3.125vw;
+  font-size: 1.25vw;
+  line-height: 2.08333vw;
+}
+
+@media (max-width: 1024px) {
+  .game__button {
+    margin-top: 2.85714vw;
+    font-size: 1.85714vw;
+    line-height: 2.42857vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .game__button {
+    margin-top: 5.33333vw;
+    font-size: 3.46667vw;
+    line-height: 4.53333vw;
+  }
+}
+
+.game__img-block {
+  height: 46.5625vw;
+  width: 44.84375vw;
+}
+
+@media (max-width: 1024px) {
+  .game__img-block {
+    margin-top: 1.42857vw;
+    height: 40.42857vw;
+    width: 42vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .game__img-block {
+    margin-top: 2.66667vw;
+    height: 75.46667vw;
+    width: 78.4vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .game__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
