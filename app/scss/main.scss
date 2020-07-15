@@ -15,6 +15,9 @@
     @include for-tiny-tablet{
         top: vw3(26);
     }
+    @include for-sm-height{
+        top: vw4(26);
+    }
 }
 .logo{
     position: relative;
@@ -51,6 +54,10 @@
             max-width: vw3(81);
             height: vw3(75);
         }
+        @include for-sm-height{
+            max-width: vw4(81);
+            height: vw4(75);
+        }
     }
     &__text{
         margin-left: vw(43);
@@ -65,10 +72,16 @@
                 display: none;
             }
         }
+        
         @include for-tiny-tablet{
             min-width: vw3(140);
             font-size: vw3(13);
             line-height: vw3(19);
+        }
+        @include for-sm-height{
+            min-width: vw4(140);
+            font-size: vw4(13);
+            line-height: vw4(19);
         }
     }
 }
@@ -92,6 +105,9 @@
     }
     @include for-tiny-tablet{
         padding: vw3(112) vw3(40) vw3(228) vw3(20);
+    }
+    @include for-sm-height{
+        padding: vw4(112) vw4(40) vw4(228) vw4(20);
     }
     &__inner-img{
         position: absolute;
@@ -154,6 +170,7 @@
         @include for-tiny-tablet{
             width: 100%;
         }
+        
     }
     
     &__subtitle{
@@ -172,6 +189,10 @@
             font-size: vw3(18);
             line-height: vw3(22);
         }
+        @include for-sm-height{
+            font-size: vw4(18);
+            line-height: vw4(22);
+        }
         
     }
     &__text{
@@ -188,6 +209,10 @@
         @include for-tiny-tablet{
             font-size: vw3(13);
             line-height: vw3(18);
+        }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(18);
         }
     }
     &__button{
@@ -208,6 +233,11 @@
             line-height: vw3(17);
             max-width: vw3(200);
         }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(17);
+            max-width: vw4(200);
+        }
     }
     &__img{
         position: absolute;
@@ -220,7 +250,10 @@
         }  
         @include for-tiny-tablet{
             max-width: vw3(382);
-        }    
+        }  
+        @include for-sm-height{
+            max-width: vw4(382);
+        }  
     }
     
 }
@@ -232,6 +265,9 @@
     @include for-tiny-tablet{
         padding: vw3(23) 0 vw3(28);
     }
+    @include for-sm-height{
+        padding: vw4(23) 0 vw4(28);
+    }  
     &__row{
         margin-top: vw(92);
         @include for-md{
@@ -239,6 +275,9 @@
         }
         @include for-tiny-tablet{
             margin-top: vw3(30);
+        }
+        @include for-sm-height{
+            margin-top: vw4(30);
         }
     }
     &__item{
@@ -262,6 +301,7 @@
             left: 50%;
             transform: translateX(-50%);
             @include for-md{
+                max-width: none;
                 width: vw2(25);
                 height: vw2(25);
                 top: vw2(15);
@@ -271,17 +311,26 @@
                 height: vw3(25);
                 top: vw3(15);
             }
+            @include for-sm-height{
+                width: vw4(25);
+                height: vw4(25);
+                top: vw4(15);
+            }
         }
         @include for-md{
             padding: vw2(60) vw2(20) vw2(30);
-            max-width: vw2(223);
+            max-width: 100%;
             height: vw2(240);
         }
         @include for-tiny-tablet{
             display: block !important;
             padding: vw3(60) vw3(20) vw3(30);
-            max-width: vw3(223);
+            // max-width: vw3(223);
             height: vw3(276);
+        }
+        @include for-sm-height{
+            padding: vw4(60) vw4(20) vw4(30);
+            height: vw4(276);
         }
     }
     &__type{
@@ -301,6 +350,9 @@
             // margin: 0 auto;
             margin-right: vw3(15);
         }
+        @include for-sm-height{
+            margin-right: vw4(15);
+        }
     }
     &__type-img{
         max-width: vw(71);
@@ -310,6 +362,9 @@
         }
         @include for-tiny-tablet{
             max-width: vw3(41);
+        }
+        @include for-sm-height{
+            max-width: vw4(41);
         }
     }
     &__type-text{
@@ -325,6 +380,10 @@
             font-size:  vw3(13);
             line-height: vw3(18);
         }
+        @include for-sm-height{
+            font-size:  vw4(13);
+            line-height: vw4(18);
+        }
     }
     &__material{
         display: flex;
@@ -336,6 +395,9 @@
         @include for-tiny-tablet{
             margin-top: vw3(25);
         }
+        @include for-sm-height{
+            margin-top: vw4(25);
+        }
     }
     &__material-img-block{
         margin-right: vw(26);
@@ -346,6 +408,9 @@
         @include for-tiny-tablet{
             margin-right: vw3(14);
         }
+        @include for-sm-height{
+            margin-right: vw4(14);
+        }
     }
     &__material-img{
         max-width: vw(59);
@@ -355,6 +420,9 @@
         }
         @include for-tiny-tablet{
             max-width: vw3(40);
+        }
+        @include for-sm-height{
+            max-width: vw4(40);
         }
     }
     &__material-text{
@@ -372,6 +440,10 @@
         @include for-tiny-tablet{
             font-size: vw3(13);
            line-height: vw3(17);
+        }
+        @include for-sm-height{
+            font-size: vw4(13);
+           line-height: vw4(17);
         }
     }
     &__button{
@@ -402,6 +474,13 @@
             line-height: vw3(17);
             bottom: vw3(30);
         }
+        @include for-sm-height{
+            max-width: vw4(150);
+            min-height: vw4(20);
+            font-size: vw4(11);
+            line-height: vw4(17);
+            bottom: vw4(30);
+        }
         // @include for-tiny-tablet{
         //     max-width: vw3(130);
         //     min-height: vw3(20);
@@ -428,6 +507,10 @@
             width: vw3(37);
             height: vw3(37);
         }
+        @include for-sm-height{
+            width: vw4(37);
+            height: vw4(37);
+        }
     }
     .arrow-next{
         right: vw(-117);
@@ -443,6 +526,9 @@
             }
             @include for-tiny-tablet{
                 height: vw3(12);
+            }
+            @include for-sm-height{
+                height: vw4(12);
             }
         }
     }
@@ -461,6 +547,9 @@
             @include for-tiny-tablet{
                 height: vw3(12);
             }
+            @include for-sm-height{
+                height: vw4(12);
+            }
         } 
         
     }
@@ -474,6 +563,9 @@
     background-color: $light-blue;
     @include for-md{
         padding: vw2(36) 0 0;
+    }
+    @include for-sm-height{
+        padding: vw4(36) 0 0;
     }
     &__microbes{
         position: absolute;
@@ -532,6 +624,11 @@
             font-size: vw3(13);
             line-height: vw3(18);
         }
+        @include for-sm-height{
+            margin-top: vw4(30);
+            font-size: vw4(13);
+            line-height: vw4(18);
+        }
     }
     &__button{
         margin-top: vw(60);
@@ -547,6 +644,11 @@
             font-size: vw3(13);
             line-height: vw3(17);
         }
+        @include for-sm-height{
+            margin-top: vw4(20);
+            font-size: vw4(13);
+            line-height: vw4(17);
+        }
     }
     &__img-block{
         height: vw(894);
@@ -560,6 +662,11 @@
             margin-top: vw3(10);
             height: vw3(283);
             width: vw3(294);
+        }
+        @include for-sm-height{
+            margin-top: vw4(10);
+            height: vw4(283);
+            width: vw4(294);
         }
     }
     &__img{
@@ -580,6 +687,9 @@
         @include for-tiny-tablet{
             padding: vw3(36) 0 vw3(104);
         }  
+        @include for-sm-height{
+            padding: vw4(36) 0 vw4(104);
+        }
     }
     &__total{
         margin-top: vw(30);
@@ -598,7 +708,12 @@
             margin-top: vw3(10);
             font-size: vw3(13);
             line-height: vw3(12);
-        }  
+        } 
+        @include for-sm-height{
+            margin-top: vw4(10);
+            font-size: vw4(13);
+            line-height: vw4(12);
+        } 
     }
     &__subtitle{
         margin-top: vw(20);
@@ -613,6 +728,11 @@
             margin-top: vw3(10);
             font-size: vw3(16);
             line-height: vw3(24);
+        } 
+        @include for-sm-height{
+            margin-top: vw4(10);
+            font-size: vw4(16);
+            line-height: vw4(24);
         }  
     }
     &__row{
@@ -623,8 +743,11 @@
         &--mt{
             margin-top: vw(216);
             @include for-tiny-tablet{
-                margin-top: vw3(60);
+                margin-top: vw3(80);
             }
+            @include for-sm-height{
+                margin-top: vw4(80);
+            } 
             
         }
         @include for-tiny-tablet{
@@ -638,6 +761,9 @@
         }
         @include for-tiny-tablet{
             margin-top: vw3(30);
+        }
+        @include for-sm-height{
+            margin-top: vw4(30);
         }
     }
     &__item{
@@ -660,6 +786,11 @@
             padding-left: vw3(64);
             font-size: vw3(16);
             line-height: vw3(24);
+        }
+        @include for-sm-height{
+            padding-left: vw4(64);
+            font-size: vw4(16);
+            line-height: vw4(24);
         }
         &:hover{
             color: $red;
@@ -695,6 +826,12 @@
                 width: vw3(48.5);
                 height: vw3(48.5);
             }
+            @include for-sm-height{
+                font-size: vw4(16);
+                line-height: vw4(14);
+                width: vw4(48.5);
+                height: vw4(48.5);
+            }
         }
     }
     &__item:nth-child(2){
@@ -714,6 +851,9 @@
         }
         @include for-tiny-tablet{
             margin-top: vw3(34);
+        }
+        @include for-sm-height{
+            margin-top: vw4(34);
         }
     }
     &__statistics{
@@ -736,42 +876,71 @@
                 font-size: vw3(30);
                 line-height: vw3(30);
             }
+            @include for-sm-height{
+                font-size: vw4(30);
+                line-height: vw4(30);
+            }
         }
         @include for-md{
             max-width: vw2(128);
             font-size: vw2(16);
             line-height: vw2(18); 
         }
-        @include for-tiny-tablet{
-            max-width: vw3(128);
-            font-size: vw3(12);
-            line-height: vw3(14);
-        }
         // @include for-tiny-tablet{
         //     max-width: vw3(128);
-        //     font-size: vw3(16);
-        //     line-height: vw3(18);
+        //     font-size: vw3(12);
+        //     line-height: vw3(14);
         // }
-        &:before{
-            content: "";
+        @include for-tiny-tablet{
+            max-width: vw3(128);
+            font-size: vw3(16);
+            line-height: vw3(18);
+        }
+        @include for-sm-height{
+            max-width: vw4(128);
+            font-size: vw4(16);
+            line-height: vw4(18);
+        }
+        // &:before{
+        //     content: "";
+        //     position: absolute;
+        //     width: vw(580);
+        //     height: vw(580);
+        //     background-image: url(../images/interview/ellipse.svg);
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     transform: translateX(-50%) translateY(-50%);
+        //     left: 50%;
+        //     top: 50%;
+        //     @include for-md{
+        //         width: vw2(209);
+        //         height: vw2(209);
+        //     }
+        //     @include for-tiny-tablet{
+        //         width: vw3(150);
+        //         height: vw3(150);
+        //     }
+            
+        // }
+        svg{
             position: absolute;
             width: vw(580);
             height: vw(580);
-            background-image: url(../images/interview/ellipse.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            transform: translateX(-50%) translateY(-50%);
             left: 50%;
             top: 50%;
+            transform: translateX(-50%) translateY(-50%);
             @include for-md{
                 width: vw2(209);
                 height: vw2(209);
             }
             @include for-tiny-tablet{
-                width: vw3(150);
-                height: vw3(150);
+                width: vw3(209);
+                height: vw3(209);
             }
-            
+            @include for-sm-height{
+                width: vw4(209);
+                height: vw4(209);
+            }
         }
     }
     &__button{
@@ -786,9 +955,14 @@
         @include for-tiny-tablet{
             line-height: vw3(44);
             margin-left: 0;
-            margin-top: vw3(70);
+            margin-top: vw3(80);
             font-size: vw3(13);
             line-height: vw3(17);
+        }
+        @include for-sm-height{
+            line-height: vw4(44);
+            font-size: vw4(13);
+            line-height: vw4(17);
         }
 
     }
@@ -801,6 +975,9 @@
         }
         @include for-tiny-tablet{
             padding-bottom: vw3(85);
+        }
+        @include for-sm-height{
+            padding-bottom: vw4(150);
         }
     }
 }
@@ -816,6 +993,9 @@
     @include for-tiny-tablet{
         padding: vw3(12) vw3(8);
     }
+    @include for-sm-height{
+        padding: vw4(12) vw4(8);
+    }
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -829,11 +1009,20 @@
         @include for-tiny-tablet{
             margin-left: vw3(20);
         }
+        @include for-sm-height{
+            margin-left: vw4(20);
+        }
     }
     &__social-link{
+        &:hover{
+            .icon{
+                fill: $light-blue;
+            }
+        }
         .icon{
             max-height: vw(20);
             max-width: vw(18);
+            transition: .3s;
             @include for-md{
                 max-width: vw2(14.25);
                 max-height: vw2(17);
@@ -841,6 +1030,10 @@
             @include for-tiny-tablet{
                 max-width: vw3(14.25);
                 max-height: vw3(17);
+            }
+            @include for-sm-height{
+                max-width: vw4(14.25);
+                max-height: vw4(17);
             }
         }
     }
@@ -851,6 +1044,9 @@
         }
         @include for-tiny-tablet{
             margin-left: vw3(14);
+        }
+        @include for-sm-height{
+            margin-left: vw4(14);
         }
     }
     &__copy{
@@ -865,6 +1061,10 @@
             font-size: vw3(13);
             line-height: vw3(19);
         }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(19);
+        }
     }
 }
 .game-page{
@@ -875,6 +1075,9 @@
     }
     @include for-tiny-tablet{
         padding: vw3(14) 0 vw3(38);
+    }
+    @include for-sm-height{
+        padding: vw4(14) 0 vw4(38);
     }
     &__text-container{
         width: 50%;
@@ -896,6 +1099,10 @@
             font-size: vw3(13);
             line-height: vw3(24);
         }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(24);
+        }
     }
     &__title{
         line-height: vw(38);
@@ -913,6 +1120,11 @@
             margin-top: vw3(10);
             font-size: vw3(22);
             line-height: vw3(24);
+        }
+        @include for-sm-height{
+            margin-top: vw4(10);
+            font-size: vw4(22);
+            line-height: vw4(24);
         }
     }
     &__inner{
@@ -938,18 +1150,21 @@
         @include for-tiny-tablet{
             margin-top: vw3(13);
         }
+        @include for-sm-height{
+            margin-top: vw4(13);
+        }
     }
     
-    &__item{
-        position: relative;
-        display: block;
+    &--item{
+        // position: relative;
+        // display: block;
         padding-left: vw(124);
-        border: none;
-        background-color: transparent;
-        font-size: vw(44);
-        line-height: vw(65);
+        // border: none;
+        // background-color: transparent;
+        // font-size: vw(44);
+        // line-height: vw(65);
         color: $white;
-        @extend %circe-bold;
+        // @extend %circe-bold;
         cursor: pointer;
         &:hover{
             color: rgba($white, 0.6);
@@ -959,29 +1174,32 @@
         }
         @include for-md{
             padding-left: vw2(55);
-            font-size: vw2(16);
-            line-height: vw2(20);
+            // font-size: vw2(16);
+            // line-height: vw2(20);
         }
         @include for-tiny-tablet{
             padding-left: vw3(55);
-            font-size: vw3(16);
-            line-height: vw3(20);
+            // font-size: vw3(16);
+            // line-height: vw3(20);
+        }
+        @include for-sm-height{
+            padding-left: vw4(55);
         }
         &::before{
-            content: "A";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            width: vw(94);
-            height: vw(94);
-            border-radius: 50%;
+            // content: "A";
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // position: absolute;
+            // width: vw(94);
+            // height: vw(94);
+            // border-radius: 50%;
             border: 2px solid $white;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: vw(44);
-            line-height: vw(28);
+            // left: 0;
+            // top: 50%;
+            // transform: translateY(-50%);
+            // font-size: vw(44);
+            // line-height: vw(28);
             @include for-md{
                 width: vw2(40);
                 height: vw2(40);
@@ -994,6 +1212,12 @@
                 height: vw3(40);
                 font-size: vw3(16);
                 line-height: vw3(12);
+            }
+            @include for-sm-height{
+                width: vw4(40);
+                height: vw4(40);
+                font-size: vw4(16);
+                line-height: vw4(12);
             }
         }
     }
@@ -1015,6 +1239,9 @@
         @include for-tiny-tablet{
             margin-top: vw3(30);
         }
+        @include for-sm-height{
+            margin-top: vw4(30);
+        }
     }
     &__img-block{
         width: vw(710);
@@ -1028,6 +1255,11 @@
             margin-top: vw3(10);
             width: vw3(280);
             height: vw3(240);
+        }
+        @include for-sm-height{
+            margin-top: vw4(10);
+            width: vw4(280);
+            height: vw4(240);
         }
     }
     &__img-block-2{
@@ -1043,6 +1275,11 @@
             margin: vw3(10) auto 0;
             width: vw3(280);
             height: vw3(239);
+        }
+        @include for-sm-height{
+            margin: vw4(10) auto 0;
+            width: vw4(280);
+            height: vw4(239);
         }
     }
     &__img{
@@ -1067,6 +1304,11 @@
             font-size: vw3(24);
             line-height: vw3(28);
         }
+        @include for-sm-height{
+            margin-top: vw4(14);
+            font-size: vw4(24);
+            line-height: vw4(28);
+        }
     }
     &__text{
         margin-top: vw(15);
@@ -1084,6 +1326,11 @@
             margin-top: vw3(11);
             font-size: vw3(13);
             line-height: vw3(18);
+        }
+        @include for-sm-height{
+            margin-top: vw4(11);
+            font-size: vw4(13);
+            line-height: vw4(18);
         }
     }
     &__button{
@@ -1104,6 +1351,12 @@
             font-size: vw3(13);
             line-height: vw3(13);
         }
+        @include for-sm-height{
+            margin-top: vw4(20);
+            min-height: vw4(44);
+            font-size: vw4(13);
+            line-height: vw4(13);
+        }
     }
     
 }
@@ -1115,6 +1368,9 @@
     }
     @include for-tiny-tablet{
         padding: vw3(14) 0 vw3(320);
+    }
+    @include for-sm-height{
+        padding: vw4(14) 0 vw4(320);
     }
     &__bubble{
         position: absolute;
@@ -1180,6 +1436,10 @@
             font-size: vw3(22);
             line-height: vw3(38);
         }
+        @include for-sm-height{
+            font-size: vw4(22);
+            line-height: vw4(38);
+        }
     }
     &__you{
         margin-bottom: vw(20);
@@ -1197,6 +1457,11 @@
             font-size: vw3(13);
             line-height: vw3(17);
         }
+        @include for-sm-height{
+            margin-bottom: vw4(10);
+            font-size: vw4(13);
+            line-height: vw4(17);
+        }
     }
     &__text{
         margin-top: vw(15);
@@ -1212,6 +1477,11 @@
             font-size: vw3(13);
             line-height: vw3(18);
         }
+        @include for-sm-height{
+            margin-top: vw4(5);
+            font-size: vw4(13);
+            line-height: vw4(18);
+        }
     }
     &__social{
         margin-top: vw(50);
@@ -1220,6 +1490,9 @@
         }
         @include for-tiny-tablet{
             margin-top: vw3(20);
+        }
+        @include for-sm-height{
+            margin-top: vw4(20);
         }
     }
     &__social-text{
@@ -1233,6 +1506,10 @@
             font-size: vw3(13);
             line-height: vw3(18);
         }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(18);
+        }
     }
     &__social-row{
         margin-top: vw(11);
@@ -1243,6 +1520,9 @@
         }
         @include for-tiny-tablet{
             margin-top: vw3(10);
+        }
+        @include for-sm-height{
+            margin-top: vw4(10);
         }
     }
     &__social-link{
@@ -1262,6 +1542,10 @@
             width: vw3(38.66);
             height: vw3(38.66);
         }
+        @include for-sm-height{
+            width: vw4(38.66);
+            height: vw4(38.66);
+        }
         &:hover{
             background-color: $blue;
             border-color: $blue;
@@ -1278,6 +1562,10 @@
                 max-width: vw3(16.53);
                 max-height: vw3(20);
             }
+            @include for-sm-height{
+                max-width: vw4(16.53);
+                max-height: vw4(20);
+            }
         }
         // .icon-vk{
         //     width: vw(40);
@@ -1291,6 +1579,10 @@
         }
         @include for-tiny-tablet{
             margin-left: vw3(13);
+        }
+        @include for-sm-height{
+            max-width: vw4(16.53);
+            max-height: vw4(20);
         }
     }
     &__button{
@@ -1307,6 +1599,11 @@
             font-size: vw3(13);
             line-height: vw3(17);
         }
+        @include for-sm-height{
+            min-height: vw4(44);
+            font-size: vw4(13);
+            line-height: vw4(17);
+        }
     }
     &__img-container{
         position: absolute;
@@ -1321,6 +1618,10 @@
         @include for-tiny-tablet{
             width: vw3(463);
             height: vw3(267);
+        }
+        @include for-sm-height{
+            width: vw4(463);
+            height: vw4(267);
         }
     }
     &__img{

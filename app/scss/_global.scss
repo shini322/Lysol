@@ -66,6 +66,10 @@ h1{
         font-size: vw3(50);
         line-height: vw3(50);
     }
+    @include for-sm-height{
+        font-size: vw4(50);
+        line-height: vw4(50);
+    }
 }
 h2{
     @extend %circe-eb;
@@ -81,6 +85,10 @@ h2{
     @include for-tiny-tablet{
         font-size: vw3(26);
         line-height: vw3(31);
+    }
+    @include for-sm-height{
+        font-size: vw4(26);
+        line-height: vw4(31);
     }
     
 }
@@ -102,6 +110,9 @@ h2{
     @include for-tiny-tablet{
         padding: vw3(7) vw3(20);
     }
+    @include for-sm-height{
+        padding: vw4(7) vw4(20);
+    }
     &:hover{
         background-color: #3474CF;
     }
@@ -120,6 +131,9 @@ h2{
     }
     @include for-tiny-tablet{
         max-width: vw3(375);
+    }
+    @include for-sm-height{
+        max-width: vw4(375);
     }
     &__inner{
         display: flex;
@@ -141,6 +155,9 @@ h2{
         @include for-tiny-tablet{
             max-height: vw3(320);
             height: 100%;
+        }
+        @include for-sm-height{
+            max-height: vw4(320);
         }
     }
     &__img{
@@ -164,6 +181,9 @@ h2{
         @include for-tiny-tablet{
             max-height: vw3(375);
         }
+        @include for-sm-height{
+            max-height: vw4(375);
+        }
     }
     &__text-block{
         padding: vw(66) vw(69) vw(62) vw(80);
@@ -180,6 +200,9 @@ h2{
         @include for-tiny-tablet{
             padding: vw3(31) vw3(21) vw3(45);
         }
+        @include for-sm-height{
+            padding: vw4(31) vw4(21) vw4(45);
+        }
     }
     &__title{
         @extend %circe-eb;
@@ -194,6 +217,10 @@ h2{
             font-size: vw3(22);
             line-height: vw3(32);
         }
+        @include for-sm-height{
+            font-size: vw4(22);
+            line-height: vw4(32);
+        }
     }
     &__subtitle{
         @extend %circe-bold;
@@ -207,6 +234,10 @@ h2{
         @include for-tiny-tablet{
             font-size: vw3(12);
             line-height: vw3(26); 
+        }
+        @include for-sm-height{
+            font-size: vw4(12);
+            line-height: vw4(26); 
         }
     }
     &__text{
@@ -225,6 +256,10 @@ h2{
         @include for-tiny-tablet{
             font-size: vw3(13);
             line-height: vw3(18); 
+        }
+        @include for-sm-height{
+            font-size: vw4(13);
+            line-height: vw4(18);  
         }
     }
     .fancybox-close-small{
@@ -251,6 +286,10 @@ h2{
                 width: vw3(20);
                 height: vw3(20); 
             }
+            @include for-sm-height{
+                width: vw4(20);
+                height: vw4(20);   
+            }
         }
         @include for-md{
             width: vw2(38);
@@ -263,6 +302,11 @@ h2{
             width: vw3(38);
             height: vw3(38);
             top: vw3(9);
+        }
+        @include for-sm-height{
+            width: vw4(38);
+            height: vw4(38);
+            top: vw4(9);  
         }
     }
     

@@ -11,8 +11,9 @@ $dark-grey: #6B818C;
 $red: #DB423B;
 
 $resolution: 1920;
-$resolution3:375;
 $resolution2:700;
+$resolution3:375;
+$resolution4:320;
 
 %circe-regular{
   font-family: 'Circe-Regular';
@@ -35,19 +36,18 @@ $resolution2:700;
 // }
 @function vw2($px) {
   @return (($px/$resolution2) * 100) + vw;
-  
-  
 }
 @function vw3($px) {
-  @return (($px/$resolution3) * 100)+vw;
+  @return (($px/$resolution3) * 100) + vw;
 }
-
-// @media screen and (max-height: 768px){
-//   @function vw2($px) {
-//     @return (($px/$resolution2) * 100) * 0.7 + vw;
-      
-//   }
+@function vw4($px) {
+  @return (($px/$resolution4) * 100) * 0.8 + vw;
+}
+// @function vw2($px) {
+  
+//   @return (($px/$resolution2) * 100) * 0.7 + vw;
 // }
+
 
 
 
@@ -69,7 +69,7 @@ $resolution2:700;
 //     @media (min-width: 1025px) { @content; }
 //   }
   @mixin for-md {
-    @media (max-width: 1024px) { @content; }
+    @media (max-width: 1023px) { @content; }
     
   }
 //   @mixin for-lit-md {
@@ -83,6 +83,9 @@ $resolution2:700;
   }
   @mixin for-md-mob{
     @media (max-width: 550px) { @content; }
+  }
+  @mixin for-sm-height {
+    @media (max-height: 767px) and (max-width: 650px) { @content;}
   }
 //   @mixin for-tiny-mob {
 //     @media (max-width: 500px) { @content; }
