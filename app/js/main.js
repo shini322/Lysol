@@ -40,7 +40,20 @@ $(window).scroll(function() {
   $('#wrapper').fullpage({
     autoScrolling:true,
     scrollHorizontally: true,
-    responsiveWidth: 1024
+    responsiveWidth: 1024,
+    onLeave: function(origin, destination, direction){
+
+      if(destination.index == 0){ // второй слайд
+        $('.header').removeClass('header-fixed');
+        
+          
+      }
+  
+      if(destination.index !== 0){ // не второй слайд
+        $('.header').addClass('header-fixed');
+       
+      }
+    }
   });
 
   
