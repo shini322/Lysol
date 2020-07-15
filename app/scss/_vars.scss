@@ -38,10 +38,10 @@ $resolution4:320;
   @return (($px/$resolution2) * 100) + vw;
 }
 @function vw3($px) {
-  @return (($px/$resolution3) * 100) + vw;
+  @return (($px/$resolution3) * 100) * 0.8 + vw;
 }
 @function vw4($px) {
-  @return (($px/$resolution4) * 100) * 0.8 + vw;
+  @return (($px/$resolution4) * 100) * 0.5 + vw;
 }
 // @function vw2($px) {
   
@@ -85,7 +85,7 @@ $resolution4:320;
     @media (max-width: 550px) { @content; }
   }
   @mixin for-sm-height {
-    @media (max-height: 767px) and (max-width: 650px) { @content;}
+    @media (max-height: 767px) and (min-width: 1024px) { @content;}
   }
 //   @mixin for-tiny-mob {
 //     @media (max-width: 500px) { @content; }
