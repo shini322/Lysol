@@ -572,6 +572,12 @@
 .interview{
     &__inner{
         padding: vw(73) 0 vw(136);
+        @include for-md{
+            padding: vw2(36) 0 vw2(104);
+        }
+        @include for-tiny-tablet{
+            padding: vw3(36) 0 vw3(104);
+        }  
     }
     &__total{
         margin-top: vw(30);
@@ -581,23 +587,56 @@
         text-transform: uppercase;
         color: $blue;
         @extend %circe-eb;
+        @include for-md{
+            margin-top: vw2(30);
+            font-size: vw2(13);
+            line-height: vw2(12);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+            font-size: vw3(13);
+            line-height: vw3(12);
+        }  
     }
     &__subtitle{
         margin-top: vw(20);
         text-transform: none;
         @extend %circe-bold;
+        @include for-md{
+            font-size: vw2(16);
+            line-height: vw2(24);
+            margin-top: vw2(20);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+            font-size: vw3(16);
+            line-height: vw3(24);
+        }  
     }
     &__row{
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
+        &--mt{
+            margin-top: vw(216);
+            @include for-tiny-tablet{
+                margin-top: vw3(60);
+            }
+            
+        }
+        @include for-tiny-tablet{
+            flex-direction: column;
+        }
     }
     &__container{
-        margin-top: vw(150);
-        // display: inline-flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
+        margin-top: vw(150);        
+        @include for-md{
+            margin-top: vw2(50);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(30);
+        }
     }
     &__item{
         position: relative;
@@ -610,6 +649,16 @@
         line-height: vw(65);
         @extend %circe-bold;
         cursor: pointer;
+        @include for-md{
+            padding-left: vw2(64);
+            font-size: vw2(16);
+            line-height: vw2(24);
+        }
+        @include for-tiny-tablet{
+            padding-left: vw3(64);
+            font-size: vw3(16);
+            line-height: vw3(24);
+        }
         &:hover{
             color: $red;
             &:before{
@@ -629,6 +678,21 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            font-size: vw(44);
+            line-height: vw(28);
+            @include for-md{
+                font-size: vw2(16);
+                line-height: vw2(14);
+                width: vw2(48.5);
+                height: vw2(48.5);
+                border-width: 1px;
+            }
+            @include for-tiny-tablet{
+                font-size: vw3(16);
+                line-height: vw3(14);
+                width: vw3(48.5);
+                height: vw3(48.5);
+            }
         }
     }
     &__item:nth-child(2){
@@ -643,6 +707,99 @@
     }
     &__item + &__item{
         margin-top: vw(66);
+        @include for-md{
+            margin-top: vw2(34);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(34);
+        }
+    }
+    &__statistics{
+        position: relative;
+        text-align: center;
+        color: $blue;
+        max-width: vw(340);
+        font-size: vw(40);
+        line-height: vw(44);
+        @extend %circe-bold;
+        z-index: 2;
+        &--big{
+            font-size: vw(90);
+            line-height: vw(92);
+            @include for-md{
+                font-size: vw2(40);
+                line-height: vw2(42);                
+            }
+            @include for-tiny-tablet{
+                font-size: vw3(30);
+                line-height: vw3(30);
+            }
+        }
+        @include for-md{
+            max-width: vw2(128);
+            font-size: vw2(16);
+            line-height: vw2(18); 
+        }
+        @include for-tiny-tablet{
+            max-width: vw3(128);
+            font-size: vw3(12);
+            line-height: vw3(14);
+        }
+        // @include for-tiny-tablet{
+        //     max-width: vw3(128);
+        //     font-size: vw3(16);
+        //     line-height: vw3(18);
+        // }
+        &:before{
+            content: "";
+            position: absolute;
+            width: vw(580);
+            height: vw(580);
+            background-image: url(../images/interview/ellipse.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateX(-50%) translateY(-50%);
+            left: 50%;
+            top: 50%;
+            @include for-md{
+                width: vw2(209);
+                height: vw2(209);
+            }
+            @include for-tiny-tablet{
+                width: vw3(150);
+                height: vw3(150);
+            }
+            
+        }
+    }
+    &__button{
+        margin-left: vw(200);
+        font-size: vw(24);
+        line-height: vw(40);
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(17);
+            margin-left: vw2(70);
+        }
+        @include for-tiny-tablet{
+            line-height: vw3(44);
+            margin-left: 0;
+            margin-top: vw3(70);
+            font-size: vw3(13);
+            line-height: vw3(17);
+        }
+
+    }
+}
+.interview-second{
+    .interview__inner{
+        padding-bottom: vw(210);
+        @include for-md{
+            padding-bottom: vw2(120);
+        }
+        @include for-tiny-tablet{
+            padding-bottom: vw3(85);
+        }
     }
 }
 .footer{
@@ -651,6 +808,12 @@
     bottom: 0;
     padding: vw(8) vw(30);
     background-color: $bg-dark-grey;
+    @include for-md{
+        padding: vw2(12) vw2(8);
+    }
+    @include for-tiny-tablet{
+        padding: vw3(12) vw3(8);
+    }
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -658,19 +821,511 @@
     }
     &__social{
         margin-left: vw(50);
+        @include for-md{
+            margin-left: vw2(20);
+        }
+        @include for-tiny-tablet{
+            margin-left: vw3(20);
+        }
     }
     &__social-link{
         .icon{
             max-height: vw(20);
             max-width: vw(18);
+            @include for-md{
+                max-width: vw2(14.25);
+                max-height: vw2(17);
+            }
+            @include for-tiny-tablet{
+                max-width: vw3(14.25);
+                max-height: vw3(17);
+            }
         }
     }
     &__social-link + &__social-link{
         margin-left: vw(30);
+        @include for-md{
+            margin-left: vw2(14);
+        }
+        @include for-tiny-tablet{
+            margin-left: vw3(14);
+        }
     }
     &__copy{
         font-size: vw(18);
         line-height: vw(27);
         color: $black;
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(19);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(19);
+        }
     }
+}
+.game-page{
+    padding: vw(148) 0 vw(175);
+    background-color: $light-blue;
+    @include for-md{
+        padding: vw2(14) 0 vw2(38);
+    }
+    @include for-tiny-tablet{
+        padding: vw3(14) 0 vw3(38);
+    }
+    &__text-container{
+        width: 50%;
+        @include for-md{
+            width: 100%;
+        }
+    }
+    &__total{
+        @extend %circe-eb;
+        font-size: vw(30);
+        line-height: vw(24);
+        text-transform: uppercase;
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(24);
+            text-align: center;
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(24);
+        }
+    }
+    &__title{
+        line-height: vw(38);
+        margin-top: vw(38);
+        color: $white;
+        text-align: left;
+        text-transform: none;
+        @include for-md{
+            margin-top: vw2(10);
+            font-size: vw2(22);
+            line-height: vw2(24);
+            text-align: center;
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+            font-size: vw3(22);
+            line-height: vw3(24);
+        }
+    }
+    &__inner{
+        display: flex;
+        @include for-md{
+            flex-direction: column-reverse;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include for-md{
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &__container{
+        margin-top: vw(110);
+        @include for-md{
+            margin-top: vw2(13);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(13);
+        }
+    }
+    
+    &__item{
+        position: relative;
+        display: block;
+        padding-left: vw(124);
+        border: none;
+        background-color: transparent;
+        font-size: vw(44);
+        line-height: vw(65);
+        color: $white;
+        @extend %circe-bold;
+        cursor: pointer;
+        &:hover{
+            color: rgba($white, 0.6);
+            &:before{
+                border-color: rgba($white, $alpha: .6);
+            }
+        }
+        @include for-md{
+            padding-left: vw2(55);
+            font-size: vw2(16);
+            line-height: vw2(20);
+        }
+        @include for-tiny-tablet{
+            padding-left: vw3(55);
+            font-size: vw3(16);
+            line-height: vw3(20);
+        }
+        &::before{
+            content: "A";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: vw(94);
+            height: vw(94);
+            border-radius: 50%;
+            border: 2px solid $white;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: vw(44);
+            line-height: vw(28);
+            @include for-md{
+                width: vw2(40);
+                height: vw2(40);
+                font-size: vw2(16);
+                line-height: vw2(12);
+                border-width: 1px;
+            }
+            @include for-tiny-tablet{
+                width: vw3(40);
+                height: vw3(40);
+                font-size: vw3(16);
+                line-height: vw3(12);
+            }
+        }
+    }
+    &__item:nth-child(2){
+        &::before{
+            content: 'B';
+        }
+    }
+    &__item:nth-child(3){
+        &::before{
+            content: 'C';
+        }
+    }
+    &__item + &__item{
+        margin-top: vw(66);
+        @include for-md{
+            margin-top: vw2(30);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(30);
+        }
+    }
+    &__img-block{
+        width: vw(710);
+        height: vw(609);
+        @include for-md{
+            width: vw2(280);
+            height: vw2(240);
+           margin: vw2(10) auto 0;
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+            width: vw3(280);
+            height: vw3(240);
+        }
+    }
+    &__img-block-2{
+        margin-left: vw(58);
+        width: vw(668);
+        height: vw(570);
+        @include for-md{
+            margin: vw2(10) auto 0;
+            width: vw2(280);
+            height: vw2(239);
+        }
+        @include for-tiny-tablet{
+            margin: vw3(10) auto 0;
+            width: vw3(280);
+            height: vw3(239);
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__subtitle{
+        margin-top: vw(10);
+        font-size: vw(44);
+        line-height: vw(48);
+        @extend %circe-bold;
+        @include for-md{
+            margin-top: vw2(14);
+            font-size: vw2(24);
+            line-height: vw2(28);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(14);
+            font-size: vw3(24);
+            line-height: vw3(28);
+        }
+    }
+    &__text{
+        margin-top: vw(15);
+        font-size: vw(24);
+        line-height: vw(34);
+        &--blue{
+            color: $blue;
+        }
+        @include for-md{
+            margin-top: vw2(11);
+            font-size: vw2(13);
+            line-height: vw2(18);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(11);
+            font-size: vw3(13);
+            line-height: vw3(18);
+        }
+    }
+    &__button{
+        margin-top: vw(30);
+        min-height: vw(79.6);
+        font-size: vw(24);
+        line-height: vw(28);
+        @extend %circe-eb;
+        @include for-md{
+            margin-top: vw2(20);
+            min-height: vw2(44);
+            font-size: vw2(13);
+            line-height: vw2(13);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(20);
+            min-height: vw3(44);
+            font-size: vw3(13);
+            line-height: vw3(13);
+        }
+    }
+    
+}
+.game-result{
+    padding: vw(160) 0 vw(136);
+    background-color: $light-blue;
+    @include for-md{
+        padding: vw2(14) 0 vw2(320);
+    }
+    @include for-tiny-tablet{
+        padding: vw3(14) 0 vw3(320);
+    }
+    &__bubble{
+        position: absolute;
+        z-index: 2;
+    }
+    &__bubble-2{
+        left: 0;
+        top: vw(335);
+        width: vw(56);
+        height: vw(56);
+    }
+    &__bubble-3{
+        left: 0;
+        top: vw(398);
+        width: vw(38);
+        height: vw(38);
+    }
+    &__bubble-4{
+        left: vw(54);
+        top: vw(478);
+        width: vw(151);
+        height: vw(151);
+    }
+    &__bubble-5{
+        left: vw(772);
+        top: vw(112);
+        width: vw(30);
+        height: vw(30);
+    }
+    &__bubble-6{
+        left: vw(772);
+        top: vw(834);
+        width: vw(82);
+        height: vw(82);
+    }
+    &__bubble-7{
+        left: vw(1210);
+        top: vw(104);
+        width: vw(56);
+        height: vw(56);
+    }
+    &__bubble-8{
+        left: vw(1466);
+        top: vw(10);
+        width: vw(82);
+        height: vw(82);
+    }
+    &__text-container{
+        width: 40%;
+        @include for-md{
+            width: 100%;
+        }
+    }
+    &__title{
+        text-transform: none;
+        color: $white;
+        text-align: left;
+        @include for-md{
+            font-size: vw2(22);
+            line-height: vw2(38);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(22);
+            line-height: vw3(38);
+        }
+    }
+    &__you{
+        margin-bottom: vw(20);
+        @extend %circe-eb;
+        font-size: vw(30);
+        line-height: vw(24);
+        text-transform: uppercase;
+        @include for-md{
+            margin-bottom: vw2(10);
+            font-size: vw2(13);
+            line-height: vw2(17);
+        }
+        @include for-tiny-tablet{
+            margin-bottom: vw3(10);
+            font-size: vw3(13);
+            line-height: vw3(17);
+        }
+    }
+    &__text{
+        margin-top: vw(15);
+        font-size: vw(24);
+        line-height: vw(34);
+        @include for-md{
+            margin-top: vw2(5);
+            font-size: vw2(13);
+            line-height: vw2(18);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(5);
+            font-size: vw3(13);
+            line-height: vw3(18);
+        }
+    }
+    &__social{
+        margin-top: vw(50);
+        @include for-md{
+            margin-top: vw2(20);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(20);
+        }
+    }
+    &__social-text{
+        font-size: vw(24);
+        line-height: vw(34);
+        @include for-md{
+            font-size: vw2(13);
+            line-height: vw2(18);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(13);
+            line-height: vw3(18);
+        }
+    }
+    &__social-row{
+        margin-top: vw(11);
+        display: flex;
+        align-items: center;
+        @include for-md{
+            margin-top: vw2(10);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(10);
+        }
+    }
+    &__social-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: vw(66);
+        height: vw(66);
+        border-radius: 50%;
+        border: 1px solid $white;
+        transition: .3s;
+        @include for-md{
+            width: vw2(38.66);
+            height: vw2(38.66);
+        }
+        @include for-tiny-tablet{
+            width: vw3(38.66);
+            height: vw3(38.66);
+        }
+        &:hover{
+            background-color: $blue;
+            border-color: $blue;
+        }
+        .icon{
+            max-width: vw(29);
+            max-height: vw(34);
+            fill: $white;
+            @include for-md{
+                max-width: vw2(16.53);
+                max-height: vw2(20);
+            }
+            @include for-tiny-tablet{
+                max-width: vw3(16.53);
+                max-height: vw3(20);
+            }
+        }
+        // .icon-vk{
+        //     width: vw(40);
+        //     height: vw(27);
+        // }
+    }
+    &__social-link + &__social-link{
+        margin-left: vw(30);
+        @include for-md{
+            margin-left: vw2(13);
+        }
+        @include for-tiny-tablet{
+            margin-left: vw3(13);
+        }
+    }
+    &__button{
+        margin-top: vw(90);
+        font-size: vw(24);
+        line-height: vw(40);
+        @include for-md{
+            min-height: vw2(44);
+            font-size: vw2(13);
+            line-height: vw2(17);
+        }
+        @include for-tiny-tablet{
+            min-height: vw3(44);
+            font-size: vw3(13);
+            line-height: vw3(17);
+        }
+    }
+    &__img-container{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: vw(1383);
+        height: vw(922);
+        @include for-md{
+            width: vw2(463);
+            height: vw2(267);
+        }
+        @include for-tiny-tablet{
+            width: vw3(463);
+            height: vw3(267);
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
 }
