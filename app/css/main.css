@@ -3,12 +3,12 @@ body, .wash__text, .instruction__material-text--light {
   font-weight: 400;
 }
 
-h1, .wash__subtitle, .instruction__type-text, .instruction__material-text {
+h1, .wash__subtitle, .instruction__type-text, .instruction__material-text, .interview__subtitle, .interview__item {
   font-family: 'Circe-Bold';
   font-weight: 700;
 }
 
-h2, .button, .wash__title, .hero__subtitle {
+h2, .button, .wash__title, .hero__subtitle, .interview__total {
   font-family: 'Circe-ExtraBold';
   font-weight: 800;
 }
@@ -5626,4 +5626,112 @@ h2 {
     width: 100%;
     height: 100%;
   }
+}
+
+.interview__inner {
+  padding: 3.80208vw 0 7.08333vw;
+}
+
+.interview__total {
+  margin-top: 1.5625vw;
+  font-size: 1.5625vw;
+  line-height: 1.25vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #16478E;
+}
+
+.interview__subtitle {
+  margin-top: 1.04167vw;
+  text-transform: none;
+}
+
+.interview__row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.interview__container {
+  margin-top: 7.8125vw;
+}
+
+.interview__item {
+  position: relative;
+  display: block;
+  padding-left: 6.45833vw;
+  border: none;
+  background-color: transparent;
+  color: #4CABE5;
+  font-size: 2.29167vw;
+  line-height: 3.38542vw;
+  cursor: pointer;
+}
+
+.interview__item:hover {
+  color: #DB423B;
+}
+
+.interview__item:hover:before {
+  border-color: #DB423B;
+}
+
+.interview__item::before {
+  content: "A";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4.89583vw;
+  height: 4.89583vw;
+  border-radius: 50%;
+  border: 2px solid #4CABE5;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.interview__item:nth-child(2)::before {
+  content: "B";
+}
+
+.interview__item:nth-child(3)::before {
+  content: "C";
+}
+
+.interview__item + .interview__item {
+  margin-top: 3.4375vw;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0.41667vw 1.5625vw;
+  background-color: #EBEBEB;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social {
+  margin-left: 2.60417vw;
+}
+
+.footer__social-link .icon {
+  max-height: 1.04167vw;
+  max-width: 0.9375vw;
+}
+
+.footer__social-link + .footer__social-link {
+  margin-left: 1.5625vw;
+}
+
+.footer__copy {
+  font-size: 0.9375vw;
+  line-height: 1.40625vw;
+  color: #000000;
 }

@@ -569,3 +569,108 @@
         }
     }
 }
+.interview{
+    &__inner{
+        padding: vw(73) 0 vw(136);
+    }
+    &__total{
+        margin-top: vw(30);
+        font-size: vw(30);
+        line-height: vw(24);
+        text-align: center;
+        text-transform: uppercase;
+        color: $blue;
+        @extend %circe-eb;
+    }
+    &__subtitle{
+        margin-top: vw(20);
+        text-transform: none;
+        @extend %circe-bold;
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    &__container{
+        margin-top: vw(150);
+        // display: inline-flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+    }
+    &__item{
+        position: relative;
+        display: block;
+        padding-left: vw(124);
+        border: none;
+        background-color: transparent;
+        color: $light-blue;
+        font-size: vw(44);
+        line-height: vw(65);
+        @extend %circe-bold;
+        cursor: pointer;
+        &:hover{
+            color: $red;
+            &:before{
+                border-color: $red;
+            }
+        }
+        &::before{
+            content: "A";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: vw(94);
+            height: vw(94);
+            border-radius: 50%;
+            border: 2px solid $light-blue;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__item:nth-child(2){
+        &::before{
+            content: "B";
+        }
+    }
+    &__item:nth-child(3){
+        &::before{
+            content: "C";
+        }
+    }
+    &__item + &__item{
+        margin-top: vw(66);
+    }
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: vw(8) vw(30);
+    background-color: $bg-dark-grey;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social{
+        margin-left: vw(50);
+    }
+    &__social-link{
+        .icon{
+            max-height: vw(20);
+            max-width: vw(18);
+        }
+    }
+    &__social-link + &__social-link{
+        margin-left: vw(30);
+    }
+    &__copy{
+        font-size: vw(18);
+        line-height: vw(27);
+        color: $black;
+    }
+}
