@@ -56,6 +56,10 @@ $(window).scroll(function() {
     }
   });
 
+$('.js-to-game').click(function () {
+  fullpage_api.moveTo(3);
+});
+
   
 
 

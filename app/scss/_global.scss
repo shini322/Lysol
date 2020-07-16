@@ -67,8 +67,8 @@ h1{
         line-height: vw3(50);
     }
     // @include for-sm-height{
-    //     font-size: vw4(50);
-    //     line-height: vw4(50);
+    //     font-size: vh4(40);
+    //     line-height: vh4(44);
     // }
 }
 h2{
@@ -137,8 +137,9 @@ h2{
     // }
     &__inner{
         display: flex;
-        align-items: center;
         max-height: vw(770);
+        background-color: #D6EEFC;
+        border-radius: 30px;
         @include for-md{
             max-height: none;  
             flex-direction: column;
@@ -146,15 +147,17 @@ h2{
         }
     }
     &__img-block{
-        max-width: vw(623);
+        width: vw(623);
+        overflow: hidden;
+        position: relative;
         @include for-md{
             max-width: 100%;
             width: 100%;
-            height: vw2(320);            
+            max-height: vw2(320);
         }
         @include for-tiny-tablet{
-            max-height: vw3(320);
             height: 100%;
+            max-height: vw3(375);
         }
         // @include for-sm-height{
         //     max-height: vw4(320);
@@ -162,28 +165,22 @@ h2{
     }
     &__img{
         display: block;
-        max-height: vw(770);
-        border-radius: 30px;
-        &--mobile{
-            display: none;
-        }
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
         @include for-md{
-            display: none;
-            height: 100%;
-            max-height: vw2(320);   
+            position: static;
             border-radius: 0;
-            object-fit: fill;
+            object-position: bottom;
+            height: 100vw;
             &--mobile{
                 display: block;
                 width: 100%;
             }
         }
-        @include for-tiny-tablet{
-            max-height: vw3(375);
-        }
-        // @include for-sm-height{
-        //     max-height: vw4(375);
-        // }
     }
     &__text-block{
         padding: vw(66) vw(69) vw(62) vw(80);

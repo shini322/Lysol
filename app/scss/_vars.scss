@@ -85,7 +85,7 @@ $resolution4:180;
     @media (max-width: 550px) { @content; }
   }
   @mixin for-sm-height {
-    @media (max-height: 880px) and (min-width: 1024px) { @content;}
+    @media (max-height: 950px) and (min-width: 1024px) { @content;}
   }
 //   @mixin for-tiny-mob {
 //     @media (max-width: 500px) { @content; }
