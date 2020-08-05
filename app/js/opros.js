@@ -25,7 +25,12 @@ $(document).ready(function() {
                 currentOpros ++;
                 setOpros(currentOpros,opros);
                 if (currentOpros == countOpros){
-                    $('.js-next-interview').remove();
+                    $('.js-next-interview').text('далее').on('click', function () {
+											$('.interview-step--2').removeClass('active').addClass('noactive');
+											$('.interview__inner').addClass('noactive');
+											$('.interview-step--3').addClass('active');
+											$(this).parents('.section').addClass('blue');
+										});
                     $('.interview__row--mt').addClass('pb');
                 }
             } else {

@@ -107,5 +107,10 @@ function showResults(testResults){
         $('.game-result__text').html(results.results[tmp].text);
         $('.game-step--2').addClass('noactive').removeClass('active');
         $('.game-step--3').addClass('active').removeClass('noactive');
+
+        var dataUrl = 'https://lysol.woman.ru/share/'+(tmp+1)+'/',
+            dataTitle = 'Вы - ' +results.results[tmp].title,
+            dataImg = 'https://lysol.woman.ru/images/share/'+(tmp+1)+'.jpg';
+        $('.game-result__social-row').attr({'data-url':dataUrl, 'data-title':dataTitle, 'data-image':dataImg});
     });
 }

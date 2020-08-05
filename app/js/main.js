@@ -6,8 +6,8 @@ $('.instruction__row').slick({
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  nextArrow: '<div class="slide-arrow arrow-next"><svg class="icon icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg></div>',
-  prevArrow: '<div class="slide-arrow arrow-prev"><svg class="icon icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-left"></use></svg></div>',
+  nextArrow: '<div class="slide-arrow arrow-next"><svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></div>',
+  prevArrow: '<div class="slide-arrow arrow-prev"><svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-left"></use></svg></div>',
   responsive: [
     {
       breakpoint: 1024,
@@ -39,6 +39,7 @@ $(window).scroll(function() {
 
   $('#wrapper').fullpage({
     autoScrolling:true,
+    scrollBar: true,
     scrollHorizontally: true,
     responsiveWidth: 1024,
     onLeave: function(origin, destination, direction){

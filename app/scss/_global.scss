@@ -21,6 +21,7 @@ button{
     height: 100%;
     width: 100%;
     max-width: 100%;
+    z-index: 2;
     // overflow-x: hidden;
 }
 .page-content{
@@ -42,11 +43,14 @@ button{
 }
 .header-fixed{
     .logo__text{
-        position: absolute;
+        /*position: absolute;
         z-index: -1;
         transform: translateX(-300%);
-        white-space: nowrap;
+        white-space: nowrap;*/
         transition: all .5s;
+        opacity: 0;
+        pointer-events: none;
+        user-select: none;
     }
 }
 h1{
@@ -67,8 +71,8 @@ h1{
         line-height: vw3(50);
     }
     // @include for-sm-height{
-    //     font-size: vh4(40);
-    //     line-height: vh4(44);
+    //     font-size: vw4(50);
+    //     line-height: vw4(50);
     // }
 }
 h2{
