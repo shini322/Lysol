@@ -27,7 +27,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "fullpage": "^1.5.1",
-    "fullpage.js": "^3.0.9",
+    "fullpage.js": "^4.0.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^5.4.1",
     "wowjs": "^1.1.3"
